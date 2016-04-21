@@ -10,13 +10,25 @@
 
 #include <cassert>   // assert
 #include <iostream>  // cout, endl
-
+#include "Life.h"
+#include <vector>
 // ----
 // main
 // ----
 
 int main () {
     using namespace std;
+    string s;
+    string perlife;
+    vector<string> input;
+        while(!cin.eof() && getline(cin, s)) {
+            perlife += s;
+
+            if (s == "") {
+                input.push_back(perlife);
+                perlife = "";
+            }
+    }
 
     // ----------------------
     // Life<ConwayCell> 21x13
@@ -27,6 +39,9 @@ int main () {
     Simulate 12 evolutions.
     Print every grid (i.e. 0, 1, 2, 3, ... 12)
     */
+    Life<ConwayCell> l(21, 13);
+    l.add_grid(input[0]);
+    l.simulate(12);
 
     // ----------------------
     // Life<ConwayCell> 20x29
@@ -37,6 +52,9 @@ int main () {
     Simulate 28 evolutions.
     Print every 4th grid (i.e. 0, 4, 8, ... 28)
     */
+    Life<ConwayCell> l2(20, 29);
+    l2.add_grid(input[1]);
+    l2.simulate(28, 4);
 
     // -----------------------
     // Life<ConwayCell> 109x69
@@ -53,6 +71,10 @@ int main () {
     Print the 2500th grid.
     */
 
+    // Life<ConwayCell> l3(106, 69);
+    // l3.add_grid(input[2]);
+    // l3.simulate(283, 1, );
+
     // -----------------------
     // Life<FredkinCell> 20x20
     // -----------------------
@@ -62,12 +84,25 @@ int main () {
     Simulate 5 evolutions.
     Print every grid (i.e. 0, 1, 2, ... 5)
     */
-
+    Life<FredkinCell> l4(20, 20);
+    l4.add_grid(input[3]);
+    // for (int i = 0; i < input[3].length(); ++i){
+    //     stringstream ss;
+    //     string s;
+    //     char c = input[3][i];
+    //     ss << c;
+    //     ss >> s;
+    //     l2.add_cell(s);
+    //     // cout << input[0][i] << endl;
+    // }
+    l4.print();
+    l4.simulate(5);
     // ----------------
     // Life<Cell> 20x20
     // ----------------
 
     cout << "*** Life<FredkinCell> 20x20 ***" << endl;
+
     /*
     Simulate 5 evolutions.
     Print every grid (i.e. 0, 1, 2, ... 5)
