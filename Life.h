@@ -24,6 +24,7 @@ class Life{
 	private:
 		vector< vector<value_type> > _grid;
 		vector< vector<int> > _neigh_cnt;
+		int _generation;
 		int _r;
 		int _c;
 		int _row;
@@ -39,6 +40,7 @@ class Life{
 			_row = row+2;
 			_col = col+2;
 			_pop = 0;
+			_generation = 0;
 		}
 
 		void add_cell(string s){
@@ -95,6 +97,7 @@ class Life{
 		void print() {
 			typename vector<vector<value_type>>::iterator row;
 			typename vector<value_type>::iterator col;
+			cout << "Generation = " << _generation << ", Population = " << _pop << "." << endl;
 			int r = 0;
 			for(row = (*this).begin()+1; row != (*this).end()-1; ++row) {
 				for(col = (*row).begin()+1; col != (*row).end()-1; ++col) {
@@ -106,28 +109,36 @@ class Life{
 			cout << endl;
 		}
 
-		void simulate(int evol, int step = 1, int start=0, int end=0) {
-			cout << "Generation = " << 0 << ", Population = " << _pop << "." << endl;
-			print();
-			if(end == 0)
-				end = evol;
-			else
-				end = end-1;
+		void simulate(int evol, int gen=0, bool original = true, int step = 1, int start=0, int end=0) {
 
-			for(int i = start+1; i <= end; ++i){
+			if(original) {
+				cout << endl;
+				print();
+			}
+				
+
+			for(int i = 1; i <= evol; ++i){
+				++_generation;
 				update_neighbor();
-				int pop = 0;
+				_pop = 0;
 				for(int row = 1; row < (int)_grid.size()-1; ++row) {
 					for(int col = 1; col < _grid[0].size()-1; ++col) {
 						int num_neigh = _neigh_cnt[row][col];
 						_grid[row][col].evolve(num_neigh);
-						pop += _grid[row][col].cnt();
+						_pop += _grid[row][col].cnt();
 					}
 				}
-				if(i%step == 0) {
-					cout << "Generation = " << i << ", Population = " << pop << "." << endl;;
-					print();		        	
+				if(gen && _generation == gen)
+					print();
+				else if(start < end && _generation == start) {
+					print();
+					++start;
+				} else if(step > 1 && i%step == 0) {
+					print();
+				} else if(step == 1 && gen == 0 && start == 0 && end == 0){
+					print();
 				}
+					
 			}
 		}
 };
