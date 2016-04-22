@@ -12,14 +12,15 @@ using namespace std;
 
 template <class T>
 class Life{
-  public:
-	typedef T                 value_type;
+	friend class LifeTest;
+  	public:
+		typedef T                 value_type;
 
-	typedef value_type*       pointer;
-	typedef const value_type* const_pointer;
+		typedef value_type*       pointer;
+		typedef const value_type* const_pointer;
 
-	typedef value_type&       reference;
-	typedef const value_type& const_reference;
+		typedef value_type&       reference;
+		typedef const value_type& const_reference;
 
 	private:
 		vector< vector<value_type> > _grid;
@@ -27,8 +28,6 @@ class Life{
 		int _generation;
 		int _r;
 		int _c;
-		int _row;
-		int _col;
 		int _pop;
 
 	public:
@@ -37,14 +36,13 @@ class Life{
 			_neigh_cnt.resize(row+2, vector<int> (col+2, 0));
 			_r = 1;
 			_c = 1;
-			_row = row+2;
-			_col = col+2;
 			_pop = 0;
 			_generation = 0;
 		}
 
 		void add_cell(string s){
-		  if(_c == _col-1){
+			int col = (int)_grid[0].size();
+			if(_c == col-1){
 				++_r;
 				_c = 1;
 			}
@@ -115,7 +113,6 @@ class Life{
 				cout << endl;
 				print();
 			}
-				
 
 			for(int i = 1; i <= evol; ++i){
 				++_generation;
@@ -144,15 +141,21 @@ class Life{
 };
 
 class AbstractCell {
-	// friend class AbstractCellTest;
+	friend class AbstractCellTest;
 	protected:
 		bool _alived;
-		char _cell;
+		AbstractCell& operator = (const AbstractCell&)  = default;
+        AbstractCell& operator = (      AbstractCell&&) = default;
 		
 	public:
 		AbstractCell(bool alived);
-		virtual AbstractCell* clone() = 0;
+		AbstractCell (const AbstractCell&)  = default;
+        AbstractCell (      AbstractCell&&) = default;
+		virtual ~AbstractCell();
+
+		virtual AbstractCell* clone() const = 0;
 		virtual void update_state(string c) = 0;
+		virtual int count_neighbor(int possible_nb[]) const = 0;
 		virtual string print() = 0;
 		virtual void evolve(int num_neighbors) = 0;
 		virtual int cnt() = 0;
@@ -160,7 +163,7 @@ class AbstractCell {
 };
 
 class ConwayCell : public AbstractCell {
-	// friend class ConwayCellTest;
+	friend class ConwayCellTest;
 	public:
 		// -----------
 		// Constructor
@@ -172,17 +175,22 @@ class ConwayCell : public AbstractCell {
 
 		ConwayCell();
 		ConwayCell(const ConwayCell&) = default;
+		ConwayCell (     ConwayCell&&) = default;
+		ConwayCell& operator = (const ConwayCell&)  = default;
+        ConwayCell& operator = (      ConwayCell&&) = default;
+		~ConwayCell() = default;
+
+		AbstractCell* clone () const;
 		void update_state(string c);
-		int count_neighbor(int possible_nb[]);
-		AbstractCell* clone ();
+		int count_neighbor(int possible_nb[]) const;
 		string print();
 		void evolve(int num_neighbors);
 		int cnt();
-		~ConwayCell() = default;
+		
 };
 
 class FredkinCell : public AbstractCell {
-	// friend class FredkinCellTest;
+	friend class FredkinCellTest;
 	private:
 		int _age;
 	public:
@@ -195,17 +203,21 @@ class FredkinCell : public AbstractCell {
 		 */
 		FredkinCell();
 		FredkinCell(const FredkinCell&) = default;
+		FredkinCell (      FredkinCell&&) = default;
+		FredkinCell& operator = (const FredkinCell&)  = default;
+        FredkinCell& operator = (      FredkinCell&&) = default;
+		~FredkinCell() = default;
+
+		AbstractCell* clone () const;
 		void update_state(string c);
-		int count_neighbor(int possible_nb[]);
-		AbstractCell* clone ();
+		int count_neighbor(int possible_nb[]) const;
 		string print();
 		void evolve(int num_neighbors);
 		int cnt();
-		~FredkinCell() = default;
 };
 
 class Cell {
-	// friend class CellTest;
+	friend class CellTest;
 	private:
 		AbstractCell* _p;
 			
@@ -218,15 +230,21 @@ class Cell {
 		 * @param       String name and default 
 		 */
 
+		// Cell();
+		// Cell (const Cell& rhs);
+		// ~Cell ();
+
 		Cell();
-		Cell (const Cell& rhs);
-		~Cell ();
+		Cell(const Cell&);
+		Cell(     Cell&&) = default;
+		Cell& operator = (const Cell&)  = default;
+        Cell& operator = (      Cell&&) = default;
+		~Cell();
+
 		void update_state(string c);
 		string print();
-		int count_neighbor(int possible_nb[]);
+		int count_neighbor(int possible_nb[]) const;
 		void evolve(int num_neighbors);
-		// Cell& operator = (Cell rhs);
-		// void swap (Cell& rhs);
 		int cnt();
 };
 

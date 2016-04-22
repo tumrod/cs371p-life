@@ -18,7 +18,11 @@ AbstractCell::AbstractCell(bool alived){
 
 
 //AbstractCell::AbstractCell(const AbstractCell& rhs);
-//AbstractCell::~AbstractCell();
+AbstractCell::~AbstractCell() {
+
+}
+
+
 //AbstractCell* AbstractCell::clone () const = 0;
 //void AbstractCell::evolve();
 
@@ -29,7 +33,7 @@ AbstractCell::AbstractCell(bool alived){
 
 ConwayCell::ConwayCell() : AbstractCell(false) {}
 
-AbstractCell* ConwayCell::clone () {
+AbstractCell* ConwayCell::clone () const{
     return new ConwayCell(*this);
 }
 
@@ -44,7 +48,7 @@ string ConwayCell::print(){
     return ".";
 }
 
-int ConwayCell::count_neighbor(int possible_nb[]) {
+int ConwayCell::count_neighbor(int possible_nb[]) const{
     return possible_nb[0]+possible_nb[1]+ possible_nb[2]+possible_nb[3]+ possible_nb[4]+possible_nb[5]+ possible_nb[6]+possible_nb[7];
 }
 
@@ -70,7 +74,7 @@ FredkinCell::FredkinCell() : AbstractCell(false) {
     _age = 0;
 }
 
-AbstractCell* FredkinCell::clone () {
+AbstractCell* FredkinCell::clone () const{
     return new FredkinCell(*this);
 }
 
@@ -84,7 +88,7 @@ void FredkinCell::update_state(string c) {
     }
 }
 
-int FredkinCell::count_neighbor(int possible_nb[]) {
+int FredkinCell::count_neighbor(int possible_nb[]) const{
     return possible_nb[0]+possible_nb[1]+ possible_nb[2]+possible_nb[3];
 }
 
@@ -131,7 +135,8 @@ Cell::Cell (const Cell& rhs) {
 }
 
 Cell::~Cell () {
-    delete _p;
+    // delete _p;
+    _p->~AbstractCell();
 }
 
 void Cell::update_state(string c) {
@@ -142,7 +147,7 @@ void Cell::update_state(string c) {
         if (ConwayCell* cw = dynamic_cast<ConwayCell*>(_p)) {
             cw->update_state(c);
         } else {
-            delete _p;
+            // delete _p;
             ConwayCell conway;
             _p = conway.clone();
             _p->update_state(c);
@@ -150,7 +155,7 @@ void Cell::update_state(string c) {
     }
 }
 
-int Cell::count_neighbor(int possible_nb[]){
+int Cell::count_neighbor(int possible_nb[]) const{
     if (FredkinCell* const fk = dynamic_cast<FredkinCell*>(_p)){
         return fk->count_neighbor(possible_nb);
     } else if (ConwayCell* const cw = dynamic_cast<ConwayCell*>(_p)){
@@ -181,7 +186,7 @@ void Cell::evolve(int num_neighbors) {
     if (FredkinCell* const fk = dynamic_cast<FredkinCell*>(_p)) {
         fk->evolve(num_neighbors);
         if(fk->print() == "2") {
-            delete _p;
+            // delete _p;
             ConwayCell conway;
             _p = conway.clone();
             _p->update_state("*");
