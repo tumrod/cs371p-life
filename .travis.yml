@@ -41,7 +41,13 @@ before_script:
     - valgrind --version
 
 script:
-    - date
+    - ls -al
+    - make life-tests
+    - ls -al
+    - make html
+    - ls -al
+    - make Life.log
     - ls -al
     - make test
+    - ls -al
     - make check

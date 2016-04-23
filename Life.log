@@ -1,0 +1,41 @@
+commit ab9586c156c933426eb1a0d43e8a0dff81f16954
+Author: tumrod <tipparat.umrod@utexas.edu>
+Date:   Fri Apr 22 21:20:38 2016 -0500
+
+    final edited closed #7, #8, #9, #10, #16
+
+commit 7b154b75dd919bdfef514b9a71659c4f515942fa
+Author: tumrod <tipparat.umrod@utexas.edu>
+Date:   Fri Apr 22 10:11:48 2016 -0500
+
+    added structure for unit tests
+
+commit 96c20b1663f025086a2b9c8b62e8f804135465b4
+Author: tumrod <tipparat.umrod@utexas.edu>
+Date:   Fri Apr 22 01:02:05 2016 -0500
+
+    closed #17 it is working with acceptance test!
+
+commit f5d90b68c0d45e5ebae12412962bb45bff97f359
+Author: tumrod <tipparat.umrod@utexas.edu>
+Date:   Thu Apr 21 22:58:58 2016 -0500
+
+    closed #8, #18, #19
+
+commit 9afbccf48985dabbca1c6f8fc0fe2c452527fd68
+Author: tumrod <tipparat.umrod@utexas.edu>
+Date:   Thu Apr 21 18:56:53 2016 -0500
+
+    closed #8, #14, #15
+
+commit 3d94835e42cb902a7dd4ff53e2227afbcffe72fe
+Author: tumrod <tipparat.umrod@utexas.edu>
+Date:   Tue Apr 19 00:10:06 2016 -0500
+
+    initial files
+
+commit 24f87947883b9f143e80e6f051ebc58690ef6f80
+Author: Tipparat Umrod <tumrod@users.noreply.github.com>
+Date:   Mon Apr 18 23:57:18 2016 -0500
+
+    Initial commit
