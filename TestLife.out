@@ -1,1 +1,236 @@
+==29827== Memcheck, a memory error detector
+==29827== Copyright (C) 2002-2013, and GNU GPL'd, by Julian Seward et al.
+==29827== Using Valgrind-3.10.1 and LibVEX; rerun with -h for copyright info
+==29827== Command: ./TestLife
+==29827== 
+Running main() from gtest_main.cc
+[==========] Running 94 tests from 5 test cases.
+[----------] Global test environment set-up.
+[----------] 27 tests from LifeTest
+[ RUN      ] LifeTest.life_1
+[       OK ] LifeTest.life_1 (65 ms)
+[ RUN      ] LifeTest.life_2
+[       OK ] LifeTest.life_2 (34 ms)
+[ RUN      ] LifeTest.life_3
+[       OK ] LifeTest.life_3 (36 ms)
+[ RUN      ] LifeTest.add_cell_1
+[       OK ] LifeTest.add_cell_1 (20 ms)
+[ RUN      ] LifeTest.add_cell_2
+[       OK ] LifeTest.add_cell_2 (22 ms)
+[ RUN      ] LifeTest.add_cell_3
+[       OK ] LifeTest.add_cell_3 (21 ms)
+[ RUN      ] LifeTest.add_grid_1
+[       OK ] LifeTest.add_grid_1 (39 ms)
+[ RUN      ] LifeTest.add_grid_2
+[       OK ] LifeTest.add_grid_2 (31 ms)
+[ RUN      ] LifeTest.add_grid_3
+[       OK ] LifeTest.add_grid_3 (35 ms)
+[ RUN      ] LifeTest.at_1
+[       OK ] LifeTest.at_1 (6 ms)
+[ RUN      ] LifeTest.at_2
+[       OK ] LifeTest.at_2 (7 ms)
+[ RUN      ] LifeTest.at_3
+[       OK ] LifeTest.at_3 (5 ms)
+[ RUN      ] LifeTest.update_neighbor_1
+[       OK ] LifeTest.update_neighbor_1 (34 ms)
+[ RUN      ] LifeTest.update_neighbor_2
+[       OK ] LifeTest.update_neighbor_2 (36 ms)
+[ RUN      ] LifeTest.update_neighbor_3
+[       OK ] LifeTest.update_neighbor_3 (44 ms)
+[ RUN      ] LifeTest.begin_1
+[       OK ] LifeTest.begin_1 (19 ms)
+[ RUN      ] LifeTest.begin_2
+[       OK ] LifeTest.begin_2 (25 ms)
+[ RUN      ] LifeTest.begin_3
+[       OK ] LifeTest.begin_3 (31 ms)
+[ RUN      ] LifeTest.end_1
+[       OK ] LifeTest.end_1 (19 ms)
+[ RUN      ] LifeTest.end_2
+[       OK ] LifeTest.end_2 (26 ms)
+[ RUN      ] LifeTest.end_3
+[       OK ] LifeTest.end_3 (29 ms)
+[ RUN      ] LifeTest.print_1
+[       OK ] LifeTest.print_1 (21 ms)
+[ RUN      ] LifeTest.print_2
+[       OK ] LifeTest.print_2 (30 ms)
+[ RUN      ] LifeTest.print_3
+[       OK ] LifeTest.print_3 (33 ms)
+[ RUN      ] LifeTest.simulate_1
+[       OK ] LifeTest.simulate_1 (33 ms)
+[ RUN      ] LifeTest.simulate_2
+[       OK ] LifeTest.simulate_2 (42 ms)
+[ RUN      ] LifeTest.simulate_3
+[       OK ] LifeTest.simulate_3 (52 ms)
+[----------] 27 tests from LifeTest (805 ms total)
+
+[----------] 6 tests from AbstractCellTest
+[ RUN      ] AbstractCellTest.AbstractCell_1
+[       OK ] AbstractCellTest.AbstractCell_1 (5 ms)
+[ RUN      ] AbstractCellTest.AbstractCell_2
+[       OK ] AbstractCellTest.AbstractCell_2 (4 ms)
+[ RUN      ] AbstractCellTest.AbstractCell_3
+[       OK ] AbstractCellTest.AbstractCell_3 (4 ms)
+[ RUN      ] AbstractCellTest.equal_op_1
+[       OK ] AbstractCellTest.equal_op_1 (2 ms)
+[ RUN      ] AbstractCellTest.equal_op_2
+[       OK ] AbstractCellTest.equal_op_2 (1 ms)
+[ RUN      ] AbstractCellTest.equal_op_3
+[       OK ] AbstractCellTest.equal_op_3 (2 ms)
+[----------] 6 tests from AbstractCellTest (18 ms total)
+
+[----------] 21 tests from ConwayCellTest
+[ RUN      ] ConwayCellTest.ConwayCell_1
+[       OK ] ConwayCellTest.ConwayCell_1 (4 ms)
+[ RUN      ] ConwayCellTest.ConwayCell_2
+[       OK ] ConwayCellTest.ConwayCell_2 (4 ms)
+[ RUN      ] ConwayCellTest.ConwayCell_3
+[       OK ] ConwayCellTest.ConwayCell_3 (3 ms)
+[ RUN      ] ConwayCellTest.clone_1
+[       OK ] ConwayCellTest.clone_1 (3 ms)
+[ RUN      ] ConwayCellTest.clone_2
+[       OK ] ConwayCellTest.clone_2 (3 ms)
+[ RUN      ] ConwayCellTest.clone_3
+[       OK ] ConwayCellTest.clone_3 (3 ms)
+[ RUN      ] ConwayCellTest.update_state_1
+[       OK ] ConwayCellTest.update_state_1 (3 ms)
+[ RUN      ] ConwayCellTest.update_state_2
+[       OK ] ConwayCellTest.update_state_2 (3 ms)
+[ RUN      ] ConwayCellTest.update_state_3
+[       OK ] ConwayCellTest.update_state_3 (6 ms)
+[ RUN      ] ConwayCellTest.count_neighbor_1
+[       OK ] ConwayCellTest.count_neighbor_1 (20 ms)
+[ RUN      ] ConwayCellTest.count_neighbor_2
+[       OK ] ConwayCellTest.count_neighbor_2 (21 ms)
+[ RUN      ] ConwayCellTest.count_neighbor_3
+[       OK ] ConwayCellTest.count_neighbor_3 (20 ms)
+[ RUN      ] ConwayCellTest.print_1
+[       OK ] ConwayCellTest.print_1 (3 ms)
+[ RUN      ] ConwayCellTest.print_2
+[       OK ] ConwayCellTest.print_2 (2 ms)
+[ RUN      ] ConwayCellTest.print_3
+[       OK ] ConwayCellTest.print_3 (3 ms)
+[ RUN      ] ConwayCellTest.evolve_1
+[       OK ] ConwayCellTest.evolve_1 (4 ms)
+[ RUN      ] ConwayCellTest.evolve_2
+[       OK ] ConwayCellTest.evolve_2 (3 ms)
+[ RUN      ] ConwayCellTest.evolve_3
+[       OK ] ConwayCellTest.evolve_3 (4 ms)
+[ RUN      ] ConwayCellTest.cnt_1
+[       OK ] ConwayCellTest.cnt_1 (3 ms)
+[ RUN      ] ConwayCellTest.cnt_2
+[       OK ] ConwayCellTest.cnt_2 (3 ms)
+[ RUN      ] ConwayCellTest.cnt_3
+[       OK ] ConwayCellTest.cnt_3 (3 ms)
+[----------] 21 tests from ConwayCellTest (123 ms total)
+
+[----------] 21 tests from FredkinCellTest
+[ RUN      ] FredkinCellTest.FredkinCell_1
+[       OK ] FredkinCellTest.FredkinCell_1 (3 ms)
+[ RUN      ] FredkinCellTest.FredkinCell_2
+[       OK ] FredkinCellTest.FredkinCell_2 (4 ms)
+[ RUN      ] FredkinCellTest.FredkinCell_3
+[       OK ] FredkinCellTest.FredkinCell_3 (4 ms)
+[ RUN      ] FredkinCellTest.clone_1
+[       OK ] FredkinCellTest.clone_1 (2 ms)
+[ RUN      ] FredkinCellTest.clone_2
+[       OK ] FredkinCellTest.clone_2 (2 ms)
+[ RUN      ] FredkinCellTest.clone_3
+[       OK ] FredkinCellTest.clone_3 (4 ms)
+[ RUN      ] FredkinCellTest.update_state_1
+[       OK ] FredkinCellTest.update_state_1 (3 ms)
+[ RUN      ] FredkinCellTest.update_state_2
+[       OK ] FredkinCellTest.update_state_2 (4 ms)
+[ RUN      ] FredkinCellTest.update_state_3
+[       OK ] FredkinCellTest.update_state_3 (5 ms)
+[ RUN      ] FredkinCellTest.count_neighbor_1
+[       OK ] FredkinCellTest.count_neighbor_1 (27 ms)
+[ RUN      ] FredkinCellTest.count_neighbor_2
+[       OK ] FredkinCellTest.count_neighbor_2 (27 ms)
+[ RUN      ] FredkinCellTest.count_neighbor_3
+[       OK ] FredkinCellTest.count_neighbor_3 (27 ms)
+[ RUN      ] FredkinCellTest.print_1
+[       OK ] FredkinCellTest.print_1 (2 ms)
+[ RUN      ] FredkinCellTest.print_2
+[       OK ] FredkinCellTest.print_2 (2 ms)
+[ RUN      ] FredkinCellTest.print_3
+[       OK ] FredkinCellTest.print_3 (3 ms)
+[ RUN      ] FredkinCellTest.evolve_1
+[       OK ] FredkinCellTest.evolve_1 (3 ms)
+[ RUN      ] FredkinCellTest.evolve_2
+[       OK ] FredkinCellTest.evolve_2 (3 ms)
+[ RUN      ] FredkinCellTest.evolve_3
+[       OK ] FredkinCellTest.evolve_3 (4 ms)
+[ RUN      ] FredkinCellTest.cnt_1
+[       OK ] FredkinCellTest.cnt_1 (3 ms)
+[ RUN      ] FredkinCellTest.cnt_2
+[       OK ] FredkinCellTest.cnt_2 (3 ms)
+[ RUN      ] FredkinCellTest.cnt_3
+[       OK ] FredkinCellTest.cnt_3 (3 ms)
+[----------] 21 tests from FredkinCellTest (141 ms total)
+
+[----------] 19 tests from CellTest
+[ RUN      ] CellTest.Cell_1
+[       OK ] CellTest.Cell_1 (1 ms)
+[ RUN      ] CellTest.Cell_Copy_1
+[       OK ] CellTest.Cell_Copy_1 (2 ms)
+[ RUN      ] CellTest.Cell_Copy_2
+[       OK ] CellTest.Cell_Copy_2 (1 ms)
+[ RUN      ] CellTest.Cell_Copy_3
+[       OK ] CellTest.Cell_Copy_3 (2 ms)
+[ RUN      ] CellTest.update_state_1
+[       OK ] CellTest.update_state_1 (2 ms)
+[ RUN      ] CellTest.update_state_2
+[       OK ] CellTest.update_state_2 (3 ms)
+[ RUN      ] CellTest.update_state_3
+[       OK ] CellTest.update_state_3 (4 ms)
+[ RUN      ] CellTest.count_neighbor_1
+[       OK ] CellTest.count_neighbor_1 (33 ms)
+[ RUN      ] CellTest.count_neighbor_2
+[       OK ] CellTest.count_neighbor_2 (33 ms)
+[ RUN      ] CellTest.count_neighbor_3
+[       OK ] CellTest.count_neighbor_3 (35 ms)
+[ RUN      ] CellTest.print_1
+[       OK ] CellTest.print_1 (2 ms)
+[ RUN      ] CellTest.print_2
+[       OK ] CellTest.print_2 (3 ms)
+[ RUN      ] CellTest.print_3
+[       OK ] CellTest.print_3 (3 ms)
+[ RUN      ] CellTest.evolve_1
+[       OK ] CellTest.evolve_1 (4 ms)
+[ RUN      ] CellTest.evolve_2
+[       OK ] CellTest.evolve_2 (4 ms)
+[ RUN      ] CellTest.evolve_3
+[       OK ] CellTest.evolve_3 (8 ms)
+[ RUN      ] CellTest.cnt_1
+[       OK ] CellTest.cnt_1 (3 ms)
+[ RUN      ] CellTest.cnt_2
+[       OK ] CellTest.cnt_2 (4 ms)
+[ RUN      ] CellTest.cnt_3
+[       OK ] CellTest.cnt_3 (6 ms)
+[----------] 19 tests from CellTest (153 ms total)
+
+[----------] Global test environment tear-down
+[==========] 94 tests from 5 test cases ran. (1271 ms total)
+[  PASSED  ] 94 tests.
+==29827== 
+==29827== HEAP SUMMARY:
+==29827==     in use at exit: 0 bytes in 0 blocks
+==29827==   total heap usage: 32,577 allocs, 32,577 frees, 6,167,819 bytes allocated
+==29827== 
+==29827== All heap blocks were freed -- no leaks are possible
+==29827== 
+==29827== For counts of detected and suppressed errors, rerun with: -v
+==29827== ERROR SUMMARY: 0 errors from 0 contexts (suppressed: 0 from 0)
+File 'Life.c++'
+Lines executed:89.84% of 128
+Branches executed:89.87% of 158
+Taken at least once:63.29% of 158
+Calls executed:66.00% of 100
+Creating 'Life.c++.gcov'
+File 'TestLife.c++'
+Lines executed:98.89% of 814
+Branches executed:67.46% of 4960
+Taken at least once:33.73% of 4960
+Calls executed:52.42% of 5492
+Creating 'TestLife.c++.gcov'
 

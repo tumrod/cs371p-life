@@ -16,16 +16,9 @@ AbstractCell::AbstractCell(bool alived){
     _alived = alived;
 }
 
-
-//AbstractCell::AbstractCell(const AbstractCell& rhs);
-AbstractCell::~AbstractCell() {
-
+bool AbstractCell::operator == (const AbstractCell& rhs) const {
+    return (_alived == rhs._alived);
 }
-
-
-//AbstractCell* AbstractCell::clone () const = 0;
-//void AbstractCell::evolve();
-
 
 // ----------
 // ConwayCell
@@ -64,6 +57,12 @@ int ConwayCell::cnt() {
         return 1;
     else
         return 0;
+}
+
+bool ConwayCell::operator== (const ConwayCell& rhs) const {
+    if (const ConwayCell* const p = dynamic_cast<const ConwayCell*>(&rhs))
+        return AbstractCell::operator==(*p);
+    return false;
 }
 
 // -----------
@@ -118,6 +117,12 @@ int FredkinCell::cnt() {
         return 0;
 }
 
+bool FredkinCell::operator== (const FredkinCell& rhs) const {
+    if (const FredkinCell* const p = dynamic_cast<const FredkinCell*>(&rhs))
+        return AbstractCell::operator==(*p) && _age==rhs._age;
+    return false;
+}
+
 // ----
 // Cell
 // ----
@@ -135,8 +140,7 @@ Cell::Cell (const Cell& rhs) {
 }
 
 Cell::~Cell () {
-    // delete _p;
-    _p->~AbstractCell();
+    delete _p;
 }
 
 void Cell::update_state(string c) {
@@ -147,7 +151,7 @@ void Cell::update_state(string c) {
         if (ConwayCell* cw = dynamic_cast<ConwayCell*>(_p)) {
             cw->update_state(c);
         } else {
-            // delete _p;
+            delete _p;
             ConwayCell conway;
             _p = conway.clone();
             _p->update_state(c);
@@ -186,12 +190,20 @@ void Cell::evolve(int num_neighbors) {
     if (FredkinCell* const fk = dynamic_cast<FredkinCell*>(_p)) {
         fk->evolve(num_neighbors);
         if(fk->print() == "2") {
-            // delete _p;
+            delete _p;
             ConwayCell conway;
             _p = conway.clone();
             _p->update_state("*");
         }
     } else if (ConwayCell* const cw = dynamic_cast<ConwayCell*>(_p))
         cw->evolve(num_neighbors);
+}
+
+bool Cell::operator== (const Cell& rhs) const {
+    if (!_p && !rhs._p)
+        return true;
+    if (!_p || !rhs._p)
+        return false;
+    return (*_p == *(rhs._p));
 }
 

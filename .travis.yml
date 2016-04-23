@@ -44,3 +44,4 @@ script:
     - date
     - ls -al
     - make test
+    - make check

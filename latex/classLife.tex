@@ -1,0 +1,502 @@
+\hypertarget{classLife}{\section{Life$<$ T $>$ Class Template Reference}
+\label{classLife}\index{Life$<$ T $>$@{Life$<$ T $>$}}
+}
+
+
+{\ttfamily \#include $<$Life.\-h$>$}
+
+\subsection*{Public Types}
+\begin{DoxyCompactItemize}
+\item 
+typedef T \hyperlink{classLife_aa51e5c8b3a0acdfa99fc9ea8c2b550f8}{value\-\_\-type}
+\item 
+typedef \hyperlink{classLife_aa51e5c8b3a0acdfa99fc9ea8c2b550f8}{value\-\_\-type} $\ast$ \hyperlink{classLife_a9fcacd1ed4c7c6c313f94fd4e8437c20}{pointer}
+\item 
+typedef const \hyperlink{classLife_aa51e5c8b3a0acdfa99fc9ea8c2b550f8}{value\-\_\-type} $\ast$ \hyperlink{classLife_a8e7afcee10dfa80f7a8826be61e79eca}{const\-\_\-pointer}
+\item 
+typedef \hyperlink{classLife_aa51e5c8b3a0acdfa99fc9ea8c2b550f8}{value\-\_\-type} \& \hyperlink{classLife_ab4d947634b5fb6d355a4a10cd6b0c505}{reference}
+\item 
+typedef const \hyperlink{classLife_aa51e5c8b3a0acdfa99fc9ea8c2b550f8}{value\-\_\-type} \& \hyperlink{classLife_a2cafb762c1d8dc3d3fc2c820f175b847}{const\-\_\-reference}
+\end{DoxyCompactItemize}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classLife_a9f6c515a2ba1a58bf895f657e502fe4e}{Life} (int row, int col)
+\item 
+void \hyperlink{classLife_af739ec50e5cc8090f75320a65cdd3875}{add\-\_\-cell} (string s)
+\item 
+void \hyperlink{classLife_a88317b18115eb5239cafc51c05ae1cfc}{add\-\_\-grid} (string input)
+\item 
+\hyperlink{classLife_aa51e5c8b3a0acdfa99fc9ea8c2b550f8}{value\-\_\-type} \& \hyperlink{classLife_a3adec94040b9767e69c91716d8b5fd40}{at} (int r, int c)
+\item 
+vector$<$ vector$<$ \hyperlink{classLife_aa51e5c8b3a0acdfa99fc9ea8c2b550f8}{value\-\_\-type} $>$\\*
+ $>$\-::iterator \hyperlink{classLife_aac8bd559ed3684cb8a8eded2b62864d7}{begin} ()
+\item 
+vector$<$ vector$<$ \hyperlink{classLife_aa51e5c8b3a0acdfa99fc9ea8c2b550f8}{value\-\_\-type} $>$\\*
+ $>$\-::iterator \hyperlink{classLife_a46a876bb53c181aba882aa52860d9dfb}{end} ()
+\item 
+void \hyperlink{classLife_afa17f66a0e1cbac5931eb77f3b27eb0b}{print} (ostream \&w)
+\item 
+void \hyperlink{classLife_ae2b61b3dd5ffcf4a05278ffc8e142e97}{simulate} (int evol, ostream \&w, int gen=0, bool original=true, int step=1, int start=0, int \hyperlink{classLife_a46a876bb53c181aba882aa52860d9dfb}{end}=0)
+\item 
+\hyperlink{classLife_abd761920e2cedaed7551628eb72e8014}{F\-R\-I\-E\-N\-D\-\_\-\-T\-E\-S\-T} (\hyperlink{classLife_ac09a12090bbd959da33d05c9c8bfa744}{Life\-Test}, life\-\_\-1)
+\item 
+\hyperlink{classLife_a9dcbf9af888061ed692a338d288c564a}{F\-R\-I\-E\-N\-D\-\_\-\-T\-E\-S\-T} (\hyperlink{classLife_ac09a12090bbd959da33d05c9c8bfa744}{Life\-Test}, life\-\_\-2)
+\item 
+\hyperlink{classLife_a5a89cc37e140e81861b6bffc4f6acfae}{F\-R\-I\-E\-N\-D\-\_\-\-T\-E\-S\-T} (\hyperlink{classLife_ac09a12090bbd959da33d05c9c8bfa744}{Life\-Test}, life\-\_\-3)
+\item 
+\hyperlink{classLife_a4ce4c0a32765db6236d901e70b4d776d}{F\-R\-I\-E\-N\-D\-\_\-\-T\-E\-S\-T} (\hyperlink{classLife_ac09a12090bbd959da33d05c9c8bfa744}{Life\-Test}, add\-\_\-cell\-\_\-1)
+\item 
+\hyperlink{classLife_a8d7664b739641f701b78fadcfd1921e6}{F\-R\-I\-E\-N\-D\-\_\-\-T\-E\-S\-T} (\hyperlink{classLife_ac09a12090bbd959da33d05c9c8bfa744}{Life\-Test}, add\-\_\-cell\-\_\-2)
+\item 
+\hyperlink{classLife_a0ed3cd225c3e06e1451f2abbbc370a74}{F\-R\-I\-E\-N\-D\-\_\-\-T\-E\-S\-T} (\hyperlink{classLife_ac09a12090bbd959da33d05c9c8bfa744}{Life\-Test}, add\-\_\-cell\-\_\-3)
+\item 
+\hyperlink{classLife_a8a7b07a6040a7880ea95b7c129ffd839}{F\-R\-I\-E\-N\-D\-\_\-\-T\-E\-S\-T} (\hyperlink{classLife_ac09a12090bbd959da33d05c9c8bfa744}{Life\-Test}, add\-\_\-grid\-\_\-1)
+\item 
+\hyperlink{classLife_af40f868feac88a90732fb186f3c1e528}{F\-R\-I\-E\-N\-D\-\_\-\-T\-E\-S\-T} (\hyperlink{classLife_ac09a12090bbd959da33d05c9c8bfa744}{Life\-Test}, add\-\_\-grid\-\_\-2)
+\item 
+\hyperlink{classLife_a1696b5a832fea3161d31b9a7bb0beddc}{F\-R\-I\-E\-N\-D\-\_\-\-T\-E\-S\-T} (\hyperlink{classLife_ac09a12090bbd959da33d05c9c8bfa744}{Life\-Test}, add\-\_\-grid\-\_\-3)
+\item 
+\hyperlink{classLife_a3748cd132bb5b108645ddd1757e2a04e}{F\-R\-I\-E\-N\-D\-\_\-\-T\-E\-S\-T} (\hyperlink{classLife_ac09a12090bbd959da33d05c9c8bfa744}{Life\-Test}, at\-\_\-1)
+\item 
+\hyperlink{classLife_a4eee3731d38f693f1c9c2c27eb8da18d}{F\-R\-I\-E\-N\-D\-\_\-\-T\-E\-S\-T} (\hyperlink{classLife_ac09a12090bbd959da33d05c9c8bfa744}{Life\-Test}, at\-\_\-2)
+\item 
+\hyperlink{classLife_ac92c92eca26318c0e3e63ffa8b082d64}{F\-R\-I\-E\-N\-D\-\_\-\-T\-E\-S\-T} (\hyperlink{classLife_ac09a12090bbd959da33d05c9c8bfa744}{Life\-Test}, at\-\_\-3)
+\item 
+\hyperlink{classLife_a98d2a9cfbe0897183aa7fc5949824923}{F\-R\-I\-E\-N\-D\-\_\-\-T\-E\-S\-T} (\hyperlink{classLife_ac09a12090bbd959da33d05c9c8bfa744}{Life\-Test}, update\-\_\-neighbor\-\_\-1)
+\item 
+\hyperlink{classLife_a8df28a050110cc65e98c796aa979b059}{F\-R\-I\-E\-N\-D\-\_\-\-T\-E\-S\-T} (\hyperlink{classLife_ac09a12090bbd959da33d05c9c8bfa744}{Life\-Test}, update\-\_\-neighbor\-\_\-2)
+\item 
+\hyperlink{classLife_a966fd771dc0f8f88ad74bdd0f7ce878a}{F\-R\-I\-E\-N\-D\-\_\-\-T\-E\-S\-T} (\hyperlink{classLife_ac09a12090bbd959da33d05c9c8bfa744}{Life\-Test}, update\-\_\-neighbor\-\_\-3)
+\item 
+\hyperlink{classLife_ad4a389524e5eb7f1526358a280a6f535}{F\-R\-I\-E\-N\-D\-\_\-\-T\-E\-S\-T} (\hyperlink{classLife_ac09a12090bbd959da33d05c9c8bfa744}{Life\-Test}, begin\-\_\-1)
+\item 
+\hyperlink{classLife_a8606185f32fefb0b7901361ba8199ba7}{F\-R\-I\-E\-N\-D\-\_\-\-T\-E\-S\-T} (\hyperlink{classLife_ac09a12090bbd959da33d05c9c8bfa744}{Life\-Test}, begin\-\_\-2)
+\item 
+\hyperlink{classLife_aa9c39a3d7520c1009e1da0602d629eb9}{F\-R\-I\-E\-N\-D\-\_\-\-T\-E\-S\-T} (\hyperlink{classLife_ac09a12090bbd959da33d05c9c8bfa744}{Life\-Test}, begin\-\_\-3)
+\item 
+\hyperlink{classLife_ad779f3cd0999dcf98464aba88d2035c2}{F\-R\-I\-E\-N\-D\-\_\-\-T\-E\-S\-T} (\hyperlink{classLife_ac09a12090bbd959da33d05c9c8bfa744}{Life\-Test}, end\-\_\-1)
+\item 
+\hyperlink{classLife_a2eb1e3410293f2f529eec0ffd26709ec}{F\-R\-I\-E\-N\-D\-\_\-\-T\-E\-S\-T} (\hyperlink{classLife_ac09a12090bbd959da33d05c9c8bfa744}{Life\-Test}, end\-\_\-2)
+\item 
+\hyperlink{classLife_a1a0117c11dc36525358ea519e591a452}{F\-R\-I\-E\-N\-D\-\_\-\-T\-E\-S\-T} (\hyperlink{classLife_ac09a12090bbd959da33d05c9c8bfa744}{Life\-Test}, end\-\_\-3)
+\item 
+\hyperlink{classLife_add4c6210e97d19c88734748e657e09ad}{F\-R\-I\-E\-N\-D\-\_\-\-T\-E\-S\-T} (\hyperlink{classLife_ac09a12090bbd959da33d05c9c8bfa744}{Life\-Test}, print\-\_\-1)
+\item 
+\hyperlink{classLife_a54f4bff99aab8266a08d0715edf1cbb7}{F\-R\-I\-E\-N\-D\-\_\-\-T\-E\-S\-T} (\hyperlink{classLife_ac09a12090bbd959da33d05c9c8bfa744}{Life\-Test}, print\-\_\-2)
+\item 
+\hyperlink{classLife_add82559e1cec37d7da8bd9857d9aad9f}{F\-R\-I\-E\-N\-D\-\_\-\-T\-E\-S\-T} (\hyperlink{classLife_ac09a12090bbd959da33d05c9c8bfa744}{Life\-Test}, print\-\_\-3)
+\item 
+\hyperlink{classLife_a5090a8976048ebe66bc48d05906fc72d}{F\-R\-I\-E\-N\-D\-\_\-\-T\-E\-S\-T} (\hyperlink{classLife_ac09a12090bbd959da33d05c9c8bfa744}{Life\-Test}, simulate\-\_\-1)
+\item 
+\hyperlink{classLife_ace83f596626267d1c45e79296c9cd059}{F\-R\-I\-E\-N\-D\-\_\-\-T\-E\-S\-T} (\hyperlink{classLife_ac09a12090bbd959da33d05c9c8bfa744}{Life\-Test}, simulate\-\_\-2)
+\item 
+\hyperlink{classLife_a0c42da57b5105325fcd11bc8d7290fe5}{F\-R\-I\-E\-N\-D\-\_\-\-T\-E\-S\-T} (\hyperlink{classLife_ac09a12090bbd959da33d05c9c8bfa744}{Life\-Test}, simulate\-\_\-3)
+\end{DoxyCompactItemize}
+\subsection*{Private Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \hyperlink{classLife_abd95ec1bee0c005f29c0a21339999718}{update\-\_\-neighbor} ()
+\end{DoxyCompactItemize}
+\subsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+vector$<$ vector$<$ \hyperlink{classLife_aa51e5c8b3a0acdfa99fc9ea8c2b550f8}{value\-\_\-type} $>$ $>$ \hyperlink{classLife_ab5d60edbdbea13736cfca6c82ec8195c}{\-\_\-grid}
+\item 
+vector$<$ vector$<$ int $>$ $>$ \hyperlink{classLife_add8ba14e19e6a8a607ce21c760f694b0}{\-\_\-neigh\-\_\-cnt}
+\item 
+int \hyperlink{classLife_a0f0c9edeadd6b61c2265baebe7df18af}{\-\_\-generation}
+\item 
+int \hyperlink{classLife_a26447fd1550c387c632ae95866e41838}{\-\_\-r}
+\item 
+int \hyperlink{classLife_ae3c3c50dc1a50876bfd29a3a7718f71d}{\-\_\-c}
+\item 
+int \hyperlink{classLife_afb729fe0cf5f5cb909b8c36de4ea689f}{\-\_\-pop}
+\end{DoxyCompactItemize}
+\subsection*{Friends}
+\begin{DoxyCompactItemize}
+\item 
+class \hyperlink{classLife_ac09a12090bbd959da33d05c9c8bfa744}{Life\-Test}
+\end{DoxyCompactItemize}
+
+
+\subsection{Member Typedef Documentation}
+\hypertarget{classLife_a8e7afcee10dfa80f7a8826be61e79eca}{\index{Life@{Life}!const\-\_\-pointer@{const\-\_\-pointer}}
+\index{const\-\_\-pointer@{const\-\_\-pointer}!Life@{Life}}
+\subsubsection[{const\-\_\-pointer}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class T $>$ typedef const {\bf value\-\_\-type}$\ast$ {\bf Life}$<$ T $>$\-::{\bf const\-\_\-pointer}}}\label{classLife_a8e7afcee10dfa80f7a8826be61e79eca}
+\hypertarget{classLife_a2cafb762c1d8dc3d3fc2c820f175b847}{\index{Life@{Life}!const\-\_\-reference@{const\-\_\-reference}}
+\index{const\-\_\-reference@{const\-\_\-reference}!Life@{Life}}
+\subsubsection[{const\-\_\-reference}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class T $>$ typedef const {\bf value\-\_\-type}\& {\bf Life}$<$ T $>$\-::{\bf const\-\_\-reference}}}\label{classLife_a2cafb762c1d8dc3d3fc2c820f175b847}
+\hypertarget{classLife_a9fcacd1ed4c7c6c313f94fd4e8437c20}{\index{Life@{Life}!pointer@{pointer}}
+\index{pointer@{pointer}!Life@{Life}}
+\subsubsection[{pointer}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class T $>$ typedef {\bf value\-\_\-type}$\ast$ {\bf Life}$<$ T $>$\-::{\bf pointer}}}\label{classLife_a9fcacd1ed4c7c6c313f94fd4e8437c20}
+\hypertarget{classLife_ab4d947634b5fb6d355a4a10cd6b0c505}{\index{Life@{Life}!reference@{reference}}
+\index{reference@{reference}!Life@{Life}}
+\subsubsection[{reference}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class T $>$ typedef {\bf value\-\_\-type}\& {\bf Life}$<$ T $>$\-::{\bf reference}}}\label{classLife_ab4d947634b5fb6d355a4a10cd6b0c505}
+\hypertarget{classLife_aa51e5c8b3a0acdfa99fc9ea8c2b550f8}{\index{Life@{Life}!value\-\_\-type@{value\-\_\-type}}
+\index{value\-\_\-type@{value\-\_\-type}!Life@{Life}}
+\subsubsection[{value\-\_\-type}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class T $>$ typedef T {\bf Life}$<$ T $>$\-::{\bf value\-\_\-type}}}\label{classLife_aa51e5c8b3a0acdfa99fc9ea8c2b550f8}
+
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{classLife_a9f6c515a2ba1a58bf895f657e502fe4e}{\index{Life@{Life}!Life@{Life}}
+\index{Life@{Life}!Life@{Life}}
+\subsubsection[{Life}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class T $>$ {\bf Life}$<$ T $>$\-::{\bf Life} (
+\begin{DoxyParamCaption}
+\item[{int}]{row, }
+\item[{int}]{col}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{classLife_a9f6c515a2ba1a58bf895f657e502fe4e}
+
+\begin{DoxyParams}{Parameters}
+{\em string} & input \\
+\hline
+\end{DoxyParams}
+
+
+\subsection{Member Function Documentation}
+\hypertarget{classLife_af739ec50e5cc8090f75320a65cdd3875}{\index{Life@{Life}!add\-\_\-cell@{add\-\_\-cell}}
+\index{add\-\_\-cell@{add\-\_\-cell}!Life@{Life}}
+\subsubsection[{add\-\_\-cell}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class T $>$ void {\bf Life}$<$ T $>$\-::add\-\_\-cell (
+\begin{DoxyParamCaption}
+\item[{string}]{s}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{classLife_af739ec50e5cc8090f75320a65cdd3875}
+
+\begin{DoxyParams}{Parameters}
+{\em string} & input \\
+\hline
+\end{DoxyParams}
+\hypertarget{classLife_a88317b18115eb5239cafc51c05ae1cfc}{\index{Life@{Life}!add\-\_\-grid@{add\-\_\-grid}}
+\index{add\-\_\-grid@{add\-\_\-grid}!Life@{Life}}
+\subsubsection[{add\-\_\-grid}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class T $>$ void {\bf Life}$<$ T $>$\-::add\-\_\-grid (
+\begin{DoxyParamCaption}
+\item[{string}]{input}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{classLife_a88317b18115eb5239cafc51c05ae1cfc}
+
+\begin{DoxyParams}{Parameters}
+{\em string} & input \\
+\hline
+\end{DoxyParams}
+\hypertarget{classLife_a3adec94040b9767e69c91716d8b5fd40}{\index{Life@{Life}!at@{at}}
+\index{at@{at}!Life@{Life}}
+\subsubsection[{at}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class T $>$ {\bf value\-\_\-type}\& {\bf Life}$<$ T $>$\-::at (
+\begin{DoxyParamCaption}
+\item[{int}]{r, }
+\item[{int}]{c}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{classLife_a3adec94040b9767e69c91716d8b5fd40}
+
+\begin{DoxyParams}{Parameters}
+{\em int} & row, int column \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+object at the position row, col 
+\end{DoxyReturn}
+\hypertarget{classLife_aac8bd559ed3684cb8a8eded2b62864d7}{\index{Life@{Life}!begin@{begin}}
+\index{begin@{begin}!Life@{Life}}
+\subsubsection[{begin}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class T $>$ vector$<$vector$<${\bf value\-\_\-type}$>$ $>$\-::iterator {\bf Life}$<$ T $>$\-::begin (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{classLife_aac8bd559ed3684cb8a8eded2b62864d7}
+\begin{DoxyReturn}{Returns}
+vector$<$vector$<$value\-\_\-type$>$$>$\-::iterator 
+\end{DoxyReturn}
+\hypertarget{classLife_a46a876bb53c181aba882aa52860d9dfb}{\index{Life@{Life}!end@{end}}
+\index{end@{end}!Life@{Life}}
+\subsubsection[{end}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class T $>$ vector$<$vector$<${\bf value\-\_\-type}$>$ $>$\-::iterator {\bf Life}$<$ T $>$\-::end (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{classLife_a46a876bb53c181aba882aa52860d9dfb}
+\begin{DoxyReturn}{Returns}
+vector$<$vector$<$value\-\_\-type$>$$>$\-::iterator 
+\end{DoxyReturn}
+\hypertarget{classLife_abd761920e2cedaed7551628eb72e8014}{\index{Life@{Life}!F\-R\-I\-E\-N\-D\-\_\-\-T\-E\-S\-T@{F\-R\-I\-E\-N\-D\-\_\-\-T\-E\-S\-T}}
+\index{F\-R\-I\-E\-N\-D\-\_\-\-T\-E\-S\-T@{F\-R\-I\-E\-N\-D\-\_\-\-T\-E\-S\-T}!Life@{Life}}
+\subsubsection[{F\-R\-I\-E\-N\-D\-\_\-\-T\-E\-S\-T}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class T $>$ {\bf Life}$<$ T $>$\-::F\-R\-I\-E\-N\-D\-\_\-\-T\-E\-S\-T (
+\begin{DoxyParamCaption}
+\item[{{\bf Life\-Test}}]{, }
+\item[{life\-\_\-1}]{}
+\end{DoxyParamCaption}
+)}}\label{classLife_abd761920e2cedaed7551628eb72e8014}
+\hypertarget{classLife_a9dcbf9af888061ed692a338d288c564a}{\index{Life@{Life}!F\-R\-I\-E\-N\-D\-\_\-\-T\-E\-S\-T@{F\-R\-I\-E\-N\-D\-\_\-\-T\-E\-S\-T}}
+\index{F\-R\-I\-E\-N\-D\-\_\-\-T\-E\-S\-T@{F\-R\-I\-E\-N\-D\-\_\-\-T\-E\-S\-T}!Life@{Life}}
+\subsubsection[{F\-R\-I\-E\-N\-D\-\_\-\-T\-E\-S\-T}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class T $>$ {\bf Life}$<$ T $>$\-::F\-R\-I\-E\-N\-D\-\_\-\-T\-E\-S\-T (
+\begin{DoxyParamCaption}
+\item[{{\bf Life\-Test}}]{, }
+\item[{life\-\_\-2}]{}
+\end{DoxyParamCaption}
+)}}\label{classLife_a9dcbf9af888061ed692a338d288c564a}
+\hypertarget{classLife_a5a89cc37e140e81861b6bffc4f6acfae}{\index{Life@{Life}!F\-R\-I\-E\-N\-D\-\_\-\-T\-E\-S\-T@{F\-R\-I\-E\-N\-D\-\_\-\-T\-E\-S\-T}}
+\index{F\-R\-I\-E\-N\-D\-\_\-\-T\-E\-S\-T@{F\-R\-I\-E\-N\-D\-\_\-\-T\-E\-S\-T}!Life@{Life}}
+\subsubsection[{F\-R\-I\-E\-N\-D\-\_\-\-T\-E\-S\-T}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class T $>$ {\bf Life}$<$ T $>$\-::F\-R\-I\-E\-N\-D\-\_\-\-T\-E\-S\-T (
+\begin{DoxyParamCaption}
+\item[{{\bf Life\-Test}}]{, }
+\item[{life\-\_\-3}]{}
+\end{DoxyParamCaption}
+)}}\label{classLife_a5a89cc37e140e81861b6bffc4f6acfae}
+\hypertarget{classLife_a4ce4c0a32765db6236d901e70b4d776d}{\index{Life@{Life}!F\-R\-I\-E\-N\-D\-\_\-\-T\-E\-S\-T@{F\-R\-I\-E\-N\-D\-\_\-\-T\-E\-S\-T}}
+\index{F\-R\-I\-E\-N\-D\-\_\-\-T\-E\-S\-T@{F\-R\-I\-E\-N\-D\-\_\-\-T\-E\-S\-T}!Life@{Life}}
+\subsubsection[{F\-R\-I\-E\-N\-D\-\_\-\-T\-E\-S\-T}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class T $>$ {\bf Life}$<$ T $>$\-::F\-R\-I\-E\-N\-D\-\_\-\-T\-E\-S\-T (
+\begin{DoxyParamCaption}
+\item[{{\bf Life\-Test}}]{, }
+\item[{add\-\_\-cell\-\_\-1}]{}
+\end{DoxyParamCaption}
+)}}\label{classLife_a4ce4c0a32765db6236d901e70b4d776d}
+\hypertarget{classLife_a8d7664b739641f701b78fadcfd1921e6}{\index{Life@{Life}!F\-R\-I\-E\-N\-D\-\_\-\-T\-E\-S\-T@{F\-R\-I\-E\-N\-D\-\_\-\-T\-E\-S\-T}}
+\index{F\-R\-I\-E\-N\-D\-\_\-\-T\-E\-S\-T@{F\-R\-I\-E\-N\-D\-\_\-\-T\-E\-S\-T}!Life@{Life}}
+\subsubsection[{F\-R\-I\-E\-N\-D\-\_\-\-T\-E\-S\-T}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class T $>$ {\bf Life}$<$ T $>$\-::F\-R\-I\-E\-N\-D\-\_\-\-T\-E\-S\-T (
+\begin{DoxyParamCaption}
+\item[{{\bf Life\-Test}}]{, }
+\item[{add\-\_\-cell\-\_\-2}]{}
+\end{DoxyParamCaption}
+)}}\label{classLife_a8d7664b739641f701b78fadcfd1921e6}
+\hypertarget{classLife_a0ed3cd225c3e06e1451f2abbbc370a74}{\index{Life@{Life}!F\-R\-I\-E\-N\-D\-\_\-\-T\-E\-S\-T@{F\-R\-I\-E\-N\-D\-\_\-\-T\-E\-S\-T}}
+\index{F\-R\-I\-E\-N\-D\-\_\-\-T\-E\-S\-T@{F\-R\-I\-E\-N\-D\-\_\-\-T\-E\-S\-T}!Life@{Life}}
+\subsubsection[{F\-R\-I\-E\-N\-D\-\_\-\-T\-E\-S\-T}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class T $>$ {\bf Life}$<$ T $>$\-::F\-R\-I\-E\-N\-D\-\_\-\-T\-E\-S\-T (
+\begin{DoxyParamCaption}
+\item[{{\bf Life\-Test}}]{, }
+\item[{add\-\_\-cell\-\_\-3}]{}
+\end{DoxyParamCaption}
+)}}\label{classLife_a0ed3cd225c3e06e1451f2abbbc370a74}
+\hypertarget{classLife_a8a7b07a6040a7880ea95b7c129ffd839}{\index{Life@{Life}!F\-R\-I\-E\-N\-D\-\_\-\-T\-E\-S\-T@{F\-R\-I\-E\-N\-D\-\_\-\-T\-E\-S\-T}}
+\index{F\-R\-I\-E\-N\-D\-\_\-\-T\-E\-S\-T@{F\-R\-I\-E\-N\-D\-\_\-\-T\-E\-S\-T}!Life@{Life}}
+\subsubsection[{F\-R\-I\-E\-N\-D\-\_\-\-T\-E\-S\-T}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class T $>$ {\bf Life}$<$ T $>$\-::F\-R\-I\-E\-N\-D\-\_\-\-T\-E\-S\-T (
+\begin{DoxyParamCaption}
+\item[{{\bf Life\-Test}}]{, }
+\item[{add\-\_\-grid\-\_\-1}]{}
+\end{DoxyParamCaption}
+)}}\label{classLife_a8a7b07a6040a7880ea95b7c129ffd839}
+\hypertarget{classLife_af40f868feac88a90732fb186f3c1e528}{\index{Life@{Life}!F\-R\-I\-E\-N\-D\-\_\-\-T\-E\-S\-T@{F\-R\-I\-E\-N\-D\-\_\-\-T\-E\-S\-T}}
+\index{F\-R\-I\-E\-N\-D\-\_\-\-T\-E\-S\-T@{F\-R\-I\-E\-N\-D\-\_\-\-T\-E\-S\-T}!Life@{Life}}
+\subsubsection[{F\-R\-I\-E\-N\-D\-\_\-\-T\-E\-S\-T}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class T $>$ {\bf Life}$<$ T $>$\-::F\-R\-I\-E\-N\-D\-\_\-\-T\-E\-S\-T (
+\begin{DoxyParamCaption}
+\item[{{\bf Life\-Test}}]{, }
+\item[{add\-\_\-grid\-\_\-2}]{}
+\end{DoxyParamCaption}
+)}}\label{classLife_af40f868feac88a90732fb186f3c1e528}
+\hypertarget{classLife_a1696b5a832fea3161d31b9a7bb0beddc}{\index{Life@{Life}!F\-R\-I\-E\-N\-D\-\_\-\-T\-E\-S\-T@{F\-R\-I\-E\-N\-D\-\_\-\-T\-E\-S\-T}}
+\index{F\-R\-I\-E\-N\-D\-\_\-\-T\-E\-S\-T@{F\-R\-I\-E\-N\-D\-\_\-\-T\-E\-S\-T}!Life@{Life}}
+\subsubsection[{F\-R\-I\-E\-N\-D\-\_\-\-T\-E\-S\-T}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class T $>$ {\bf Life}$<$ T $>$\-::F\-R\-I\-E\-N\-D\-\_\-\-T\-E\-S\-T (
+\begin{DoxyParamCaption}
+\item[{{\bf Life\-Test}}]{, }
+\item[{add\-\_\-grid\-\_\-3}]{}
+\end{DoxyParamCaption}
+)}}\label{classLife_a1696b5a832fea3161d31b9a7bb0beddc}
+\hypertarget{classLife_a3748cd132bb5b108645ddd1757e2a04e}{\index{Life@{Life}!F\-R\-I\-E\-N\-D\-\_\-\-T\-E\-S\-T@{F\-R\-I\-E\-N\-D\-\_\-\-T\-E\-S\-T}}
+\index{F\-R\-I\-E\-N\-D\-\_\-\-T\-E\-S\-T@{F\-R\-I\-E\-N\-D\-\_\-\-T\-E\-S\-T}!Life@{Life}}
+\subsubsection[{F\-R\-I\-E\-N\-D\-\_\-\-T\-E\-S\-T}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class T $>$ {\bf Life}$<$ T $>$\-::F\-R\-I\-E\-N\-D\-\_\-\-T\-E\-S\-T (
+\begin{DoxyParamCaption}
+\item[{{\bf Life\-Test}}]{, }
+\item[{at\-\_\-1}]{}
+\end{DoxyParamCaption}
+)}}\label{classLife_a3748cd132bb5b108645ddd1757e2a04e}
+\hypertarget{classLife_a4eee3731d38f693f1c9c2c27eb8da18d}{\index{Life@{Life}!F\-R\-I\-E\-N\-D\-\_\-\-T\-E\-S\-T@{F\-R\-I\-E\-N\-D\-\_\-\-T\-E\-S\-T}}
+\index{F\-R\-I\-E\-N\-D\-\_\-\-T\-E\-S\-T@{F\-R\-I\-E\-N\-D\-\_\-\-T\-E\-S\-T}!Life@{Life}}
+\subsubsection[{F\-R\-I\-E\-N\-D\-\_\-\-T\-E\-S\-T}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class T $>$ {\bf Life}$<$ T $>$\-::F\-R\-I\-E\-N\-D\-\_\-\-T\-E\-S\-T (
+\begin{DoxyParamCaption}
+\item[{{\bf Life\-Test}}]{, }
+\item[{at\-\_\-2}]{}
+\end{DoxyParamCaption}
+)}}\label{classLife_a4eee3731d38f693f1c9c2c27eb8da18d}
+\hypertarget{classLife_ac92c92eca26318c0e3e63ffa8b082d64}{\index{Life@{Life}!F\-R\-I\-E\-N\-D\-\_\-\-T\-E\-S\-T@{F\-R\-I\-E\-N\-D\-\_\-\-T\-E\-S\-T}}
+\index{F\-R\-I\-E\-N\-D\-\_\-\-T\-E\-S\-T@{F\-R\-I\-E\-N\-D\-\_\-\-T\-E\-S\-T}!Life@{Life}}
+\subsubsection[{F\-R\-I\-E\-N\-D\-\_\-\-T\-E\-S\-T}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class T $>$ {\bf Life}$<$ T $>$\-::F\-R\-I\-E\-N\-D\-\_\-\-T\-E\-S\-T (
+\begin{DoxyParamCaption}
+\item[{{\bf Life\-Test}}]{, }
+\item[{at\-\_\-3}]{}
+\end{DoxyParamCaption}
+)}}\label{classLife_ac92c92eca26318c0e3e63ffa8b082d64}
+\hypertarget{classLife_a98d2a9cfbe0897183aa7fc5949824923}{\index{Life@{Life}!F\-R\-I\-E\-N\-D\-\_\-\-T\-E\-S\-T@{F\-R\-I\-E\-N\-D\-\_\-\-T\-E\-S\-T}}
+\index{F\-R\-I\-E\-N\-D\-\_\-\-T\-E\-S\-T@{F\-R\-I\-E\-N\-D\-\_\-\-T\-E\-S\-T}!Life@{Life}}
+\subsubsection[{F\-R\-I\-E\-N\-D\-\_\-\-T\-E\-S\-T}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class T $>$ {\bf Life}$<$ T $>$\-::F\-R\-I\-E\-N\-D\-\_\-\-T\-E\-S\-T (
+\begin{DoxyParamCaption}
+\item[{{\bf Life\-Test}}]{, }
+\item[{update\-\_\-neighbor\-\_\-1}]{}
+\end{DoxyParamCaption}
+)}}\label{classLife_a98d2a9cfbe0897183aa7fc5949824923}
+\hypertarget{classLife_a8df28a050110cc65e98c796aa979b059}{\index{Life@{Life}!F\-R\-I\-E\-N\-D\-\_\-\-T\-E\-S\-T@{F\-R\-I\-E\-N\-D\-\_\-\-T\-E\-S\-T}}
+\index{F\-R\-I\-E\-N\-D\-\_\-\-T\-E\-S\-T@{F\-R\-I\-E\-N\-D\-\_\-\-T\-E\-S\-T}!Life@{Life}}
+\subsubsection[{F\-R\-I\-E\-N\-D\-\_\-\-T\-E\-S\-T}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class T $>$ {\bf Life}$<$ T $>$\-::F\-R\-I\-E\-N\-D\-\_\-\-T\-E\-S\-T (
+\begin{DoxyParamCaption}
+\item[{{\bf Life\-Test}}]{, }
+\item[{update\-\_\-neighbor\-\_\-2}]{}
+\end{DoxyParamCaption}
+)}}\label{classLife_a8df28a050110cc65e98c796aa979b059}
+\hypertarget{classLife_a966fd771dc0f8f88ad74bdd0f7ce878a}{\index{Life@{Life}!F\-R\-I\-E\-N\-D\-\_\-\-T\-E\-S\-T@{F\-R\-I\-E\-N\-D\-\_\-\-T\-E\-S\-T}}
+\index{F\-R\-I\-E\-N\-D\-\_\-\-T\-E\-S\-T@{F\-R\-I\-E\-N\-D\-\_\-\-T\-E\-S\-T}!Life@{Life}}
+\subsubsection[{F\-R\-I\-E\-N\-D\-\_\-\-T\-E\-S\-T}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class T $>$ {\bf Life}$<$ T $>$\-::F\-R\-I\-E\-N\-D\-\_\-\-T\-E\-S\-T (
+\begin{DoxyParamCaption}
+\item[{{\bf Life\-Test}}]{, }
+\item[{update\-\_\-neighbor\-\_\-3}]{}
+\end{DoxyParamCaption}
+)}}\label{classLife_a966fd771dc0f8f88ad74bdd0f7ce878a}
+\hypertarget{classLife_ad4a389524e5eb7f1526358a280a6f535}{\index{Life@{Life}!F\-R\-I\-E\-N\-D\-\_\-\-T\-E\-S\-T@{F\-R\-I\-E\-N\-D\-\_\-\-T\-E\-S\-T}}
+\index{F\-R\-I\-E\-N\-D\-\_\-\-T\-E\-S\-T@{F\-R\-I\-E\-N\-D\-\_\-\-T\-E\-S\-T}!Life@{Life}}
+\subsubsection[{F\-R\-I\-E\-N\-D\-\_\-\-T\-E\-S\-T}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class T $>$ {\bf Life}$<$ T $>$\-::F\-R\-I\-E\-N\-D\-\_\-\-T\-E\-S\-T (
+\begin{DoxyParamCaption}
+\item[{{\bf Life\-Test}}]{, }
+\item[{begin\-\_\-1}]{}
+\end{DoxyParamCaption}
+)}}\label{classLife_ad4a389524e5eb7f1526358a280a6f535}
+\hypertarget{classLife_a8606185f32fefb0b7901361ba8199ba7}{\index{Life@{Life}!F\-R\-I\-E\-N\-D\-\_\-\-T\-E\-S\-T@{F\-R\-I\-E\-N\-D\-\_\-\-T\-E\-S\-T}}
+\index{F\-R\-I\-E\-N\-D\-\_\-\-T\-E\-S\-T@{F\-R\-I\-E\-N\-D\-\_\-\-T\-E\-S\-T}!Life@{Life}}
+\subsubsection[{F\-R\-I\-E\-N\-D\-\_\-\-T\-E\-S\-T}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class T $>$ {\bf Life}$<$ T $>$\-::F\-R\-I\-E\-N\-D\-\_\-\-T\-E\-S\-T (
+\begin{DoxyParamCaption}
+\item[{{\bf Life\-Test}}]{, }
+\item[{begin\-\_\-2}]{}
+\end{DoxyParamCaption}
+)}}\label{classLife_a8606185f32fefb0b7901361ba8199ba7}
+\hypertarget{classLife_aa9c39a3d7520c1009e1da0602d629eb9}{\index{Life@{Life}!F\-R\-I\-E\-N\-D\-\_\-\-T\-E\-S\-T@{F\-R\-I\-E\-N\-D\-\_\-\-T\-E\-S\-T}}
+\index{F\-R\-I\-E\-N\-D\-\_\-\-T\-E\-S\-T@{F\-R\-I\-E\-N\-D\-\_\-\-T\-E\-S\-T}!Life@{Life}}
+\subsubsection[{F\-R\-I\-E\-N\-D\-\_\-\-T\-E\-S\-T}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class T $>$ {\bf Life}$<$ T $>$\-::F\-R\-I\-E\-N\-D\-\_\-\-T\-E\-S\-T (
+\begin{DoxyParamCaption}
+\item[{{\bf Life\-Test}}]{, }
+\item[{begin\-\_\-3}]{}
+\end{DoxyParamCaption}
+)}}\label{classLife_aa9c39a3d7520c1009e1da0602d629eb9}
+\hypertarget{classLife_ad779f3cd0999dcf98464aba88d2035c2}{\index{Life@{Life}!F\-R\-I\-E\-N\-D\-\_\-\-T\-E\-S\-T@{F\-R\-I\-E\-N\-D\-\_\-\-T\-E\-S\-T}}
+\index{F\-R\-I\-E\-N\-D\-\_\-\-T\-E\-S\-T@{F\-R\-I\-E\-N\-D\-\_\-\-T\-E\-S\-T}!Life@{Life}}
+\subsubsection[{F\-R\-I\-E\-N\-D\-\_\-\-T\-E\-S\-T}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class T $>$ {\bf Life}$<$ T $>$\-::F\-R\-I\-E\-N\-D\-\_\-\-T\-E\-S\-T (
+\begin{DoxyParamCaption}
+\item[{{\bf Life\-Test}}]{, }
+\item[{end\-\_\-1}]{}
+\end{DoxyParamCaption}
+)}}\label{classLife_ad779f3cd0999dcf98464aba88d2035c2}
+\hypertarget{classLife_a2eb1e3410293f2f529eec0ffd26709ec}{\index{Life@{Life}!F\-R\-I\-E\-N\-D\-\_\-\-T\-E\-S\-T@{F\-R\-I\-E\-N\-D\-\_\-\-T\-E\-S\-T}}
+\index{F\-R\-I\-E\-N\-D\-\_\-\-T\-E\-S\-T@{F\-R\-I\-E\-N\-D\-\_\-\-T\-E\-S\-T}!Life@{Life}}
+\subsubsection[{F\-R\-I\-E\-N\-D\-\_\-\-T\-E\-S\-T}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class T $>$ {\bf Life}$<$ T $>$\-::F\-R\-I\-E\-N\-D\-\_\-\-T\-E\-S\-T (
+\begin{DoxyParamCaption}
+\item[{{\bf Life\-Test}}]{, }
+\item[{end\-\_\-2}]{}
+\end{DoxyParamCaption}
+)}}\label{classLife_a2eb1e3410293f2f529eec0ffd26709ec}
+\hypertarget{classLife_a1a0117c11dc36525358ea519e591a452}{\index{Life@{Life}!F\-R\-I\-E\-N\-D\-\_\-\-T\-E\-S\-T@{F\-R\-I\-E\-N\-D\-\_\-\-T\-E\-S\-T}}
+\index{F\-R\-I\-E\-N\-D\-\_\-\-T\-E\-S\-T@{F\-R\-I\-E\-N\-D\-\_\-\-T\-E\-S\-T}!Life@{Life}}
+\subsubsection[{F\-R\-I\-E\-N\-D\-\_\-\-T\-E\-S\-T}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class T $>$ {\bf Life}$<$ T $>$\-::F\-R\-I\-E\-N\-D\-\_\-\-T\-E\-S\-T (
+\begin{DoxyParamCaption}
+\item[{{\bf Life\-Test}}]{, }
+\item[{end\-\_\-3}]{}
+\end{DoxyParamCaption}
+)}}\label{classLife_a1a0117c11dc36525358ea519e591a452}
+\hypertarget{classLife_add4c6210e97d19c88734748e657e09ad}{\index{Life@{Life}!F\-R\-I\-E\-N\-D\-\_\-\-T\-E\-S\-T@{F\-R\-I\-E\-N\-D\-\_\-\-T\-E\-S\-T}}
+\index{F\-R\-I\-E\-N\-D\-\_\-\-T\-E\-S\-T@{F\-R\-I\-E\-N\-D\-\_\-\-T\-E\-S\-T}!Life@{Life}}
+\subsubsection[{F\-R\-I\-E\-N\-D\-\_\-\-T\-E\-S\-T}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class T $>$ {\bf Life}$<$ T $>$\-::F\-R\-I\-E\-N\-D\-\_\-\-T\-E\-S\-T (
+\begin{DoxyParamCaption}
+\item[{{\bf Life\-Test}}]{, }
+\item[{print\-\_\-1}]{}
+\end{DoxyParamCaption}
+)}}\label{classLife_add4c6210e97d19c88734748e657e09ad}
+\hypertarget{classLife_a54f4bff99aab8266a08d0715edf1cbb7}{\index{Life@{Life}!F\-R\-I\-E\-N\-D\-\_\-\-T\-E\-S\-T@{F\-R\-I\-E\-N\-D\-\_\-\-T\-E\-S\-T}}
+\index{F\-R\-I\-E\-N\-D\-\_\-\-T\-E\-S\-T@{F\-R\-I\-E\-N\-D\-\_\-\-T\-E\-S\-T}!Life@{Life}}
+\subsubsection[{F\-R\-I\-E\-N\-D\-\_\-\-T\-E\-S\-T}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class T $>$ {\bf Life}$<$ T $>$\-::F\-R\-I\-E\-N\-D\-\_\-\-T\-E\-S\-T (
+\begin{DoxyParamCaption}
+\item[{{\bf Life\-Test}}]{, }
+\item[{print\-\_\-2}]{}
+\end{DoxyParamCaption}
+)}}\label{classLife_a54f4bff99aab8266a08d0715edf1cbb7}
+\hypertarget{classLife_add82559e1cec37d7da8bd9857d9aad9f}{\index{Life@{Life}!F\-R\-I\-E\-N\-D\-\_\-\-T\-E\-S\-T@{F\-R\-I\-E\-N\-D\-\_\-\-T\-E\-S\-T}}
+\index{F\-R\-I\-E\-N\-D\-\_\-\-T\-E\-S\-T@{F\-R\-I\-E\-N\-D\-\_\-\-T\-E\-S\-T}!Life@{Life}}
+\subsubsection[{F\-R\-I\-E\-N\-D\-\_\-\-T\-E\-S\-T}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class T $>$ {\bf Life}$<$ T $>$\-::F\-R\-I\-E\-N\-D\-\_\-\-T\-E\-S\-T (
+\begin{DoxyParamCaption}
+\item[{{\bf Life\-Test}}]{, }
+\item[{print\-\_\-3}]{}
+\end{DoxyParamCaption}
+)}}\label{classLife_add82559e1cec37d7da8bd9857d9aad9f}
+\hypertarget{classLife_a5090a8976048ebe66bc48d05906fc72d}{\index{Life@{Life}!F\-R\-I\-E\-N\-D\-\_\-\-T\-E\-S\-T@{F\-R\-I\-E\-N\-D\-\_\-\-T\-E\-S\-T}}
+\index{F\-R\-I\-E\-N\-D\-\_\-\-T\-E\-S\-T@{F\-R\-I\-E\-N\-D\-\_\-\-T\-E\-S\-T}!Life@{Life}}
+\subsubsection[{F\-R\-I\-E\-N\-D\-\_\-\-T\-E\-S\-T}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class T $>$ {\bf Life}$<$ T $>$\-::F\-R\-I\-E\-N\-D\-\_\-\-T\-E\-S\-T (
+\begin{DoxyParamCaption}
+\item[{{\bf Life\-Test}}]{, }
+\item[{simulate\-\_\-1}]{}
+\end{DoxyParamCaption}
+)}}\label{classLife_a5090a8976048ebe66bc48d05906fc72d}
+\hypertarget{classLife_ace83f596626267d1c45e79296c9cd059}{\index{Life@{Life}!F\-R\-I\-E\-N\-D\-\_\-\-T\-E\-S\-T@{F\-R\-I\-E\-N\-D\-\_\-\-T\-E\-S\-T}}
+\index{F\-R\-I\-E\-N\-D\-\_\-\-T\-E\-S\-T@{F\-R\-I\-E\-N\-D\-\_\-\-T\-E\-S\-T}!Life@{Life}}
+\subsubsection[{F\-R\-I\-E\-N\-D\-\_\-\-T\-E\-S\-T}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class T $>$ {\bf Life}$<$ T $>$\-::F\-R\-I\-E\-N\-D\-\_\-\-T\-E\-S\-T (
+\begin{DoxyParamCaption}
+\item[{{\bf Life\-Test}}]{, }
+\item[{simulate\-\_\-2}]{}
+\end{DoxyParamCaption}
+)}}\label{classLife_ace83f596626267d1c45e79296c9cd059}
+\hypertarget{classLife_a0c42da57b5105325fcd11bc8d7290fe5}{\index{Life@{Life}!F\-R\-I\-E\-N\-D\-\_\-\-T\-E\-S\-T@{F\-R\-I\-E\-N\-D\-\_\-\-T\-E\-S\-T}}
+\index{F\-R\-I\-E\-N\-D\-\_\-\-T\-E\-S\-T@{F\-R\-I\-E\-N\-D\-\_\-\-T\-E\-S\-T}!Life@{Life}}
+\subsubsection[{F\-R\-I\-E\-N\-D\-\_\-\-T\-E\-S\-T}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class T $>$ {\bf Life}$<$ T $>$\-::F\-R\-I\-E\-N\-D\-\_\-\-T\-E\-S\-T (
+\begin{DoxyParamCaption}
+\item[{{\bf Life\-Test}}]{, }
+\item[{simulate\-\_\-3}]{}
+\end{DoxyParamCaption}
+)}}\label{classLife_a0c42da57b5105325fcd11bc8d7290fe5}
+\hypertarget{classLife_afa17f66a0e1cbac5931eb77f3b27eb0b}{\index{Life@{Life}!print@{print}}
+\index{print@{print}!Life@{Life}}
+\subsubsection[{print}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class T $>$ void {\bf Life}$<$ T $>$\-::print (
+\begin{DoxyParamCaption}
+\item[{ostream \&}]{w}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{classLife_afa17f66a0e1cbac5931eb77f3b27eb0b}
+
+\begin{DoxyParams}{Parameters}
+{\em ostream\&} & outputstream \\
+\hline
+\end{DoxyParams}
+\hypertarget{classLife_ae2b61b3dd5ffcf4a05278ffc8e142e97}{\index{Life@{Life}!simulate@{simulate}}
+\index{simulate@{simulate}!Life@{Life}}
+\subsubsection[{simulate}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class T $>$ void {\bf Life}$<$ T $>$\-::simulate (
+\begin{DoxyParamCaption}
+\item[{int}]{evol, }
+\item[{ostream \&}]{w, }
+\item[{int}]{gen = {\ttfamily 0}, }
+\item[{bool}]{original = {\ttfamily true}, }
+\item[{int}]{step = {\ttfamily 1}, }
+\item[{int}]{start = {\ttfamily 0}, }
+\item[{int}]{end = {\ttfamily 0}}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{classLife_ae2b61b3dd5ffcf4a05278ffc8e142e97}
+
+\begin{DoxyParams}{Parameters}
+{\em int} & evol \-: number of evolution ostream\& w \-: outputstream int gen=0 \-: generation (for specific print) bool original = true\-: include original board (generation 0) int step = 1 \-: step size int start=0 \-: starting point of printing int end=0 \-: ending point of printing \\
+\hline
+\end{DoxyParams}
+\hypertarget{classLife_abd95ec1bee0c005f29c0a21339999718}{\index{Life@{Life}!update\-\_\-neighbor@{update\-\_\-neighbor}}
+\index{update\-\_\-neighbor@{update\-\_\-neighbor}!Life@{Life}}
+\subsubsection[{update\-\_\-neighbor}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class T $>$ void {\bf Life}$<$ T $>$\-::update\-\_\-neighbor (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [private]}}}\label{classLife_abd95ec1bee0c005f29c0a21339999718}
+
+
+\subsection{Friends And Related Function Documentation}
+\hypertarget{classLife_ac09a12090bbd959da33d05c9c8bfa744}{\index{Life@{Life}!Life\-Test@{Life\-Test}}
+\index{Life\-Test@{Life\-Test}!Life@{Life}}
+\subsubsection[{Life\-Test}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class T $>$ friend class Life\-Test\hspace{0.3cm}{\ttfamily [friend]}}}\label{classLife_ac09a12090bbd959da33d05c9c8bfa744}
+
+
+\subsection{Member Data Documentation}
+\hypertarget{classLife_ae3c3c50dc1a50876bfd29a3a7718f71d}{\index{Life@{Life}!\-\_\-c@{\-\_\-c}}
+\index{\-\_\-c@{\-\_\-c}!Life@{Life}}
+\subsubsection[{\-\_\-c}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class T $>$ int {\bf Life}$<$ T $>$\-::\-\_\-c\hspace{0.3cm}{\ttfamily [private]}}}\label{classLife_ae3c3c50dc1a50876bfd29a3a7718f71d}
+\hypertarget{classLife_a0f0c9edeadd6b61c2265baebe7df18af}{\index{Life@{Life}!\-\_\-generation@{\-\_\-generation}}
+\index{\-\_\-generation@{\-\_\-generation}!Life@{Life}}
+\subsubsection[{\-\_\-generation}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class T $>$ int {\bf Life}$<$ T $>$\-::\-\_\-generation\hspace{0.3cm}{\ttfamily [private]}}}\label{classLife_a0f0c9edeadd6b61c2265baebe7df18af}
+\hypertarget{classLife_ab5d60edbdbea13736cfca6c82ec8195c}{\index{Life@{Life}!\-\_\-grid@{\-\_\-grid}}
+\index{\-\_\-grid@{\-\_\-grid}!Life@{Life}}
+\subsubsection[{\-\_\-grid}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class T $>$ vector$<$ vector$<${\bf value\-\_\-type}$>$ $>$ {\bf Life}$<$ T $>$\-::\-\_\-grid\hspace{0.3cm}{\ttfamily [private]}}}\label{classLife_ab5d60edbdbea13736cfca6c82ec8195c}
+\hypertarget{classLife_add8ba14e19e6a8a607ce21c760f694b0}{\index{Life@{Life}!\-\_\-neigh\-\_\-cnt@{\-\_\-neigh\-\_\-cnt}}
+\index{\-\_\-neigh\-\_\-cnt@{\-\_\-neigh\-\_\-cnt}!Life@{Life}}
+\subsubsection[{\-\_\-neigh\-\_\-cnt}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class T $>$ vector$<$ vector$<$int$>$ $>$ {\bf Life}$<$ T $>$\-::\-\_\-neigh\-\_\-cnt\hspace{0.3cm}{\ttfamily [private]}}}\label{classLife_add8ba14e19e6a8a607ce21c760f694b0}
+\hypertarget{classLife_afb729fe0cf5f5cb909b8c36de4ea689f}{\index{Life@{Life}!\-\_\-pop@{\-\_\-pop}}
+\index{\-\_\-pop@{\-\_\-pop}!Life@{Life}}
+\subsubsection[{\-\_\-pop}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class T $>$ int {\bf Life}$<$ T $>$\-::\-\_\-pop\hspace{0.3cm}{\ttfamily [private]}}}\label{classLife_afb729fe0cf5f5cb909b8c36de4ea689f}
+\hypertarget{classLife_a26447fd1550c387c632ae95866e41838}{\index{Life@{Life}!\-\_\-r@{\-\_\-r}}
+\index{\-\_\-r@{\-\_\-r}!Life@{Life}}
+\subsubsection[{\-\_\-r}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class T $>$ int {\bf Life}$<$ T $>$\-::\-\_\-r\hspace{0.3cm}{\ttfamily [private]}}}\label{classLife_a26447fd1550c387c632ae95866e41838}
+
+
+The documentation for this class was generated from the following file\-:\begin{DoxyCompactItemize}
+\item 
+\hyperlink{Life_8h}{Life.\-h}\end{DoxyCompactItemize}

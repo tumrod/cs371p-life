@@ -24,12 +24,12 @@ int main () {
     while(!cin.eof() ) {
         getline(cin, s);
         perlife += s;
-        if (s == "") {
+        if (s == "" || cin.eof()) {
             input.push_back(perlife);
             perlife = "";
         }
     }
-
+    // cout << input[4];
     // ----------------------
     // Life<ConwayCell> 21x13
     // ----------------------
@@ -41,7 +41,8 @@ int main () {
     */
     Life<ConwayCell> l(21, 13);
     l.add_grid(input[0]);
-    l.simulate(12);
+
+    l.simulate(12, cout);
 
     // ----------------------
     // Life<ConwayCell> 20x29
@@ -54,7 +55,7 @@ int main () {
     */
     Life<ConwayCell> l2(20, 29);
     l2.add_grid(input[1]);
-    l2.simulate(28, 0, true, 4, 0, 0);
+    l2.simulate(28, cout, 0, true, 4, 0, 0);
 
     // -----------------------
     // Life<ConwayCell> 109x69
@@ -74,9 +75,9 @@ int main () {
     Life<ConwayCell> l3(109, 69);
     // cout << input[2];
     l3.add_grid(input[2]);
-    l3.simulate(283, 283, true, 1, 1, 10);
-    l3.simulate(40, 323, false, 1, 0, 0);
-    l3.simulate(2177, 2500, false, 1, 0, 0);
+    l3.simulate(283, cout, 283, true, 1, 1, 10);
+    l3.simulate(40, cout, 323, false, 1, 0, 0);
+    l3.simulate(2177, cout, 2500, false, 1, 0, 0);
 
     // -----------------------
     // Life<FredkinCell> 20x20
@@ -89,7 +90,7 @@ int main () {
     */
     Life<FredkinCell> l4(20, 20);
     l4.add_grid(input[3]);
-    l4.simulate(5);
+    l4.simulate(5, cout);
 
     // ----------------
     // Life<Cell> 20x20
@@ -103,6 +104,6 @@ int main () {
     */
     Life<Cell> l5(20, 20);
     l5.add_grid(input[4]);
-    l5.simulate(5);
+    l5.simulate(5, cout);
     
     return 0;}

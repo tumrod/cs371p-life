@@ -1,0 +1,460 @@
+\hypertarget{classConwayCell}{\section{Conway\-Cell Class Reference}
+\label{classConwayCell}\index{Conway\-Cell@{Conway\-Cell}}
+}
+
+
+{\ttfamily \#include $<$Life.\-h$>$}
+
+Inheritance diagram for Conway\-Cell\-:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{classConwayCell}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classConwayCell_aeff597ba7adcb28d4c386d075eddb196}{Conway\-Cell} ()
+\item 
+\hyperlink{classConwayCell_a62b809851f5cd9acfbc07d5a0ea283f1}{Conway\-Cell} (const \hyperlink{classConwayCell}{Conway\-Cell} \&)=default
+\item 
+\hyperlink{classConwayCell_a84ee85ecc83a697ae5954c24294a2af8}{Conway\-Cell} (\hyperlink{classConwayCell}{Conway\-Cell} \&\&)=default
+\item 
+\hyperlink{classConwayCell}{Conway\-Cell} \& \hyperlink{classConwayCell_aa83d009212f52ac55e39f42f002970a0}{operator=} (const \hyperlink{classConwayCell}{Conway\-Cell} \&)=default
+\item 
+\hyperlink{classConwayCell}{Conway\-Cell} \& \hyperlink{classConwayCell_a951cc1ac6d81cfea066a2076953fa209}{operator=} (\hyperlink{classConwayCell}{Conway\-Cell} \&\&)=default
+\item 
+\hyperlink{classConwayCell_a965899766787781cf4463ab080b56cb5}{$\sim$\-Conway\-Cell} ()=default
+\item 
+\hyperlink{classAbstractCell}{Abstract\-Cell} $\ast$ \hyperlink{classConwayCell_a00e3f8117929e7dcbb85f71aeaa10368}{clone} () const 
+\item 
+void \hyperlink{classConwayCell_a6a0d34c7f90a1b76e144c891ba4541e5}{update\-\_\-state} (string c)
+\item 
+int \hyperlink{classConwayCell_afbd79c8a5fc7a7da5885cdc7445f5b45}{count\-\_\-neighbor} (int possible\-\_\-nb\mbox{[}$\,$\mbox{]}) const 
+\item 
+string \hyperlink{classConwayCell_ad8be337992eca64445ebc1259af8d4ca}{print} ()
+\item 
+void \hyperlink{classConwayCell_a94a403a65aac5b0c9fd69c175122151c}{evolve} (int num\-\_\-neighbors)
+\item 
+int \hyperlink{classConwayCell_a49c7cf05666f19c89e8a0b29a78a6d3f}{cnt} ()
+\item 
+bool \hyperlink{classConwayCell_a5f0061fad24ab7d11c315f3e2dfe45be}{operator==} (const \hyperlink{classConwayCell}{Conway\-Cell} \&rhs) const 
+\item 
+\hyperlink{classConwayCell_a2067446abf91a0e431cfbfcef78655e9}{F\-R\-I\-E\-N\-D\-\_\-\-T\-E\-S\-T} (\hyperlink{classConwayCell_aaf9203db9ae10bf69d131c17aa7bf43c}{Conway\-Cell\-Test}, Conway\-Cell\-\_\-1)
+\item 
+\hyperlink{classConwayCell_aa53ff60436e507934569ad56ef9173e3}{F\-R\-I\-E\-N\-D\-\_\-\-T\-E\-S\-T} (\hyperlink{classConwayCell_aaf9203db9ae10bf69d131c17aa7bf43c}{Conway\-Cell\-Test}, Conway\-Cell\-\_\-2)
+\item 
+\hyperlink{classConwayCell_ad6c71e5f6e6d522ceac4238841840f19}{F\-R\-I\-E\-N\-D\-\_\-\-T\-E\-S\-T} (\hyperlink{classConwayCell_aaf9203db9ae10bf69d131c17aa7bf43c}{Conway\-Cell\-Test}, Conway\-Cell\-\_\-3)
+\item 
+\hyperlink{classConwayCell_a69db8d9316954fdf1743c6a71bc982c4}{F\-R\-I\-E\-N\-D\-\_\-\-T\-E\-S\-T} (\hyperlink{classConwayCell_aaf9203db9ae10bf69d131c17aa7bf43c}{Conway\-Cell\-Test}, clone\-\_\-1)
+\item 
+\hyperlink{classConwayCell_a3ab2d2c90bb57a8b50442b6100f0308c}{F\-R\-I\-E\-N\-D\-\_\-\-T\-E\-S\-T} (\hyperlink{classConwayCell_aaf9203db9ae10bf69d131c17aa7bf43c}{Conway\-Cell\-Test}, clone\-\_\-2)
+\item 
+\hyperlink{classConwayCell_aee7a7ab257ea971be8d495686919e571}{F\-R\-I\-E\-N\-D\-\_\-\-T\-E\-S\-T} (\hyperlink{classConwayCell_aaf9203db9ae10bf69d131c17aa7bf43c}{Conway\-Cell\-Test}, clone\-\_\-3)
+\item 
+\hyperlink{classConwayCell_ab8149e7169ca80bc99322e205fdc32d8}{F\-R\-I\-E\-N\-D\-\_\-\-T\-E\-S\-T} (\hyperlink{classConwayCell_aaf9203db9ae10bf69d131c17aa7bf43c}{Conway\-Cell\-Test}, update\-\_\-state\-\_\-1)
+\item 
+\hyperlink{classConwayCell_a69cf21e56a52a165b356afeaab25ed04}{F\-R\-I\-E\-N\-D\-\_\-\-T\-E\-S\-T} (\hyperlink{classConwayCell_aaf9203db9ae10bf69d131c17aa7bf43c}{Conway\-Cell\-Test}, update\-\_\-state\-\_\-2)
+\item 
+\hyperlink{classConwayCell_a99bd220d17a2e3690de9cf5e089f35cc}{F\-R\-I\-E\-N\-D\-\_\-\-T\-E\-S\-T} (\hyperlink{classConwayCell_aaf9203db9ae10bf69d131c17aa7bf43c}{Conway\-Cell\-Test}, update\-\_\-state\-\_\-3)
+\item 
+\hyperlink{classConwayCell_a0cc28543775075f67a5fde349eccfcbe}{F\-R\-I\-E\-N\-D\-\_\-\-T\-E\-S\-T} (\hyperlink{classConwayCell_aaf9203db9ae10bf69d131c17aa7bf43c}{Conway\-Cell\-Test}, count\-\_\-neighbor\-\_\-1)
+\item 
+\hyperlink{classConwayCell_af0c4905fac30c9919443297577ad7596}{F\-R\-I\-E\-N\-D\-\_\-\-T\-E\-S\-T} (\hyperlink{classConwayCell_aaf9203db9ae10bf69d131c17aa7bf43c}{Conway\-Cell\-Test}, count\-\_\-neighbor\-\_\-2)
+\item 
+\hyperlink{classConwayCell_a5d773d33e9e45dec53ff3e2695cfa2d1}{F\-R\-I\-E\-N\-D\-\_\-\-T\-E\-S\-T} (\hyperlink{classConwayCell_aaf9203db9ae10bf69d131c17aa7bf43c}{Conway\-Cell\-Test}, count\-\_\-neighbor\-\_\-3)
+\item 
+\hyperlink{classConwayCell_a2bb98a624065715ba41f16d10b6e9940}{F\-R\-I\-E\-N\-D\-\_\-\-T\-E\-S\-T} (\hyperlink{classConwayCell_aaf9203db9ae10bf69d131c17aa7bf43c}{Conway\-Cell\-Test}, print\-\_\-1)
+\item 
+\hyperlink{classConwayCell_a7242e24d1d1ef00e33e4c7a1c086402d}{F\-R\-I\-E\-N\-D\-\_\-\-T\-E\-S\-T} (\hyperlink{classConwayCell_aaf9203db9ae10bf69d131c17aa7bf43c}{Conway\-Cell\-Test}, print\-\_\-2)
+\item 
+\hyperlink{classConwayCell_aee2276a5977cdc6d699ac17461a3e695}{F\-R\-I\-E\-N\-D\-\_\-\-T\-E\-S\-T} (\hyperlink{classConwayCell_aaf9203db9ae10bf69d131c17aa7bf43c}{Conway\-Cell\-Test}, print\-\_\-3)
+\item 
+\hyperlink{classConwayCell_a5ec1d3543e64c91e7f5a4c102de94bd6}{F\-R\-I\-E\-N\-D\-\_\-\-T\-E\-S\-T} (\hyperlink{classConwayCell_aaf9203db9ae10bf69d131c17aa7bf43c}{Conway\-Cell\-Test}, evolve\-\_\-1)
+\item 
+\hyperlink{classConwayCell_a5c8705818153b330a7ec627abe35d1e2}{F\-R\-I\-E\-N\-D\-\_\-\-T\-E\-S\-T} (\hyperlink{classConwayCell_aaf9203db9ae10bf69d131c17aa7bf43c}{Conway\-Cell\-Test}, evolve\-\_\-2)
+\item 
+\hyperlink{classConwayCell_afe554afb102b15f42819bc5021d80dae}{F\-R\-I\-E\-N\-D\-\_\-\-T\-E\-S\-T} (\hyperlink{classConwayCell_aaf9203db9ae10bf69d131c17aa7bf43c}{Conway\-Cell\-Test}, evolve\-\_\-3)
+\item 
+\hyperlink{classConwayCell_acff342e1a23dad421d012916272d51f4}{F\-R\-I\-E\-N\-D\-\_\-\-T\-E\-S\-T} (\hyperlink{classConwayCell_aaf9203db9ae10bf69d131c17aa7bf43c}{Conway\-Cell\-Test}, cnt\-\_\-1)
+\item 
+\hyperlink{classConwayCell_add103ae6493c6aab58eeb8549c9c6aba}{F\-R\-I\-E\-N\-D\-\_\-\-T\-E\-S\-T} (\hyperlink{classConwayCell_aaf9203db9ae10bf69d131c17aa7bf43c}{Conway\-Cell\-Test}, cnt\-\_\-2)
+\item 
+\hyperlink{classConwayCell_a5cb196006329cfa5bb92b682297bddfa}{F\-R\-I\-E\-N\-D\-\_\-\-T\-E\-S\-T} (\hyperlink{classConwayCell_aaf9203db9ae10bf69d131c17aa7bf43c}{Conway\-Cell\-Test}, cnt\-\_\-3)
+\item 
+\hyperlink{classConwayCell_a5bb511ca635edd0de76fc7d7603b9617}{F\-R\-I\-E\-N\-D\-\_\-\-T\-E\-S\-T} (\hyperlink{classConwayCell_aaf9203db9ae10bf69d131c17aa7bf43c}{Conway\-Cell\-Test}, operator\-\_\-equal\-\_\-equal\-\_\-1)
+\item 
+\hyperlink{classConwayCell_abd78212cc3404f77b5a08f0686c190bd}{F\-R\-I\-E\-N\-D\-\_\-\-T\-E\-S\-T} (\hyperlink{classConwayCell_aaf9203db9ae10bf69d131c17aa7bf43c}{Conway\-Cell\-Test}, operator\-\_\-equal\-\_\-equal\-\_\-2)
+\item 
+\hyperlink{classConwayCell_a46f5c85b64001dedaaa8d859be53ebcf}{F\-R\-I\-E\-N\-D\-\_\-\-T\-E\-S\-T} (\hyperlink{classConwayCell_aaf9203db9ae10bf69d131c17aa7bf43c}{Conway\-Cell\-Test}, operator\-\_\-equal\-\_\-equal\-\_\-3)
+\end{DoxyCompactItemize}
+\subsection*{Friends}
+\begin{DoxyCompactItemize}
+\item 
+class \hyperlink{classConwayCell_aaf9203db9ae10bf69d131c17aa7bf43c}{Conway\-Cell\-Test}
+\end{DoxyCompactItemize}
+\subsection*{Additional Inherited Members}
+
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{classConwayCell_aeff597ba7adcb28d4c386d075eddb196}{\index{Conway\-Cell@{Conway\-Cell}!Conway\-Cell@{Conway\-Cell}}
+\index{Conway\-Cell@{Conway\-Cell}!ConwayCell@{Conway\-Cell}}
+\subsubsection[{Conway\-Cell}]{\setlength{\rightskip}{0pt plus 5cm}Conway\-Cell\-::\-Conway\-Cell (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{classConwayCell_aeff597ba7adcb28d4c386d075eddb196}
+
+\begin{DoxyParams}{Parameters}
+{\em String} & name and default \\
+\hline
+\end{DoxyParams}
+\hypertarget{classConwayCell_a62b809851f5cd9acfbc07d5a0ea283f1}{\index{Conway\-Cell@{Conway\-Cell}!Conway\-Cell@{Conway\-Cell}}
+\index{Conway\-Cell@{Conway\-Cell}!ConwayCell@{Conway\-Cell}}
+\subsubsection[{Conway\-Cell}]{\setlength{\rightskip}{0pt plus 5cm}Conway\-Cell\-::\-Conway\-Cell (
+\begin{DoxyParamCaption}
+\item[{const {\bf Conway\-Cell} \&}]{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [default]}}}\label{classConwayCell_a62b809851f5cd9acfbc07d5a0ea283f1}
+\hypertarget{classConwayCell_a84ee85ecc83a697ae5954c24294a2af8}{\index{Conway\-Cell@{Conway\-Cell}!Conway\-Cell@{Conway\-Cell}}
+\index{Conway\-Cell@{Conway\-Cell}!ConwayCell@{Conway\-Cell}}
+\subsubsection[{Conway\-Cell}]{\setlength{\rightskip}{0pt plus 5cm}Conway\-Cell\-::\-Conway\-Cell (
+\begin{DoxyParamCaption}
+\item[{{\bf Conway\-Cell} \&\&}]{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [default]}}}\label{classConwayCell_a84ee85ecc83a697ae5954c24294a2af8}
+\hypertarget{classConwayCell_a965899766787781cf4463ab080b56cb5}{\index{Conway\-Cell@{Conway\-Cell}!$\sim$\-Conway\-Cell@{$\sim$\-Conway\-Cell}}
+\index{$\sim$\-Conway\-Cell@{$\sim$\-Conway\-Cell}!ConwayCell@{Conway\-Cell}}
+\subsubsection[{$\sim$\-Conway\-Cell}]{\setlength{\rightskip}{0pt plus 5cm}Conway\-Cell\-::$\sim$\-Conway\-Cell (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [default]}}}\label{classConwayCell_a965899766787781cf4463ab080b56cb5}
+
+
+\subsection{Member Function Documentation}
+\hypertarget{classConwayCell_a00e3f8117929e7dcbb85f71aeaa10368}{\index{Conway\-Cell@{Conway\-Cell}!clone@{clone}}
+\index{clone@{clone}!ConwayCell@{Conway\-Cell}}
+\subsubsection[{clone}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Abstract\-Cell} $\ast$ Conway\-Cell\-::clone (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [virtual]}}}\label{classConwayCell_a00e3f8117929e7dcbb85f71aeaa10368}
+
+
+Implements \hyperlink{classAbstractCell_a1a95a7ea92b3503e2f042170b6320354}{Abstract\-Cell}.
+
+\hypertarget{classConwayCell_a49c7cf05666f19c89e8a0b29a78a6d3f}{\index{Conway\-Cell@{Conway\-Cell}!cnt@{cnt}}
+\index{cnt@{cnt}!ConwayCell@{Conway\-Cell}}
+\subsubsection[{cnt}]{\setlength{\rightskip}{0pt plus 5cm}int Conway\-Cell\-::cnt (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}}\label{classConwayCell_a49c7cf05666f19c89e8a0b29a78a6d3f}
+\begin{DoxyReturn}{Returns}
+count 1 for alived, count 0 for dead 
+\end{DoxyReturn}
+
+
+Implements \hyperlink{classAbstractCell_aac03c6e21580569ae306909e68feae9d}{Abstract\-Cell}.
+
+\hypertarget{classConwayCell_afbd79c8a5fc7a7da5885cdc7445f5b45}{\index{Conway\-Cell@{Conway\-Cell}!count\-\_\-neighbor@{count\-\_\-neighbor}}
+\index{count\-\_\-neighbor@{count\-\_\-neighbor}!ConwayCell@{Conway\-Cell}}
+\subsubsection[{count\-\_\-neighbor}]{\setlength{\rightskip}{0pt plus 5cm}int Conway\-Cell\-::count\-\_\-neighbor (
+\begin{DoxyParamCaption}
+\item[{int}]{possible\-\_\-nb\mbox{[}$\,$\mbox{]}}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [virtual]}}}\label{classConwayCell_afbd79c8a5fc7a7da5885cdc7445f5b45}
+
+\begin{DoxyParams}{Parameters}
+{\em int\mbox{[}$\,$\mbox{]}} & of possible neighbors upto 8 neighbors \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+int number of neighbor 
+\end{DoxyReturn}
+
+
+Implements \hyperlink{classAbstractCell_af566abaafe33b73bae0874566a987b63}{Abstract\-Cell}.
+
+\hypertarget{classConwayCell_a94a403a65aac5b0c9fd69c175122151c}{\index{Conway\-Cell@{Conway\-Cell}!evolve@{evolve}}
+\index{evolve@{evolve}!ConwayCell@{Conway\-Cell}}
+\subsubsection[{evolve}]{\setlength{\rightskip}{0pt plus 5cm}void Conway\-Cell\-::evolve (
+\begin{DoxyParamCaption}
+\item[{int}]{num\-\_\-neighbors}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}}\label{classConwayCell_a94a403a65aac5b0c9fd69c175122151c}
+
+\begin{DoxyParams}{Parameters}
+{\em int} & number of neighbors \\
+\hline
+\end{DoxyParams}
+
+
+Implements \hyperlink{classAbstractCell_ad46c73f9a67419ecd570a7677525054f}{Abstract\-Cell}.
+
+\hypertarget{classConwayCell_a2067446abf91a0e431cfbfcef78655e9}{\index{Conway\-Cell@{Conway\-Cell}!F\-R\-I\-E\-N\-D\-\_\-\-T\-E\-S\-T@{F\-R\-I\-E\-N\-D\-\_\-\-T\-E\-S\-T}}
+\index{F\-R\-I\-E\-N\-D\-\_\-\-T\-E\-S\-T@{F\-R\-I\-E\-N\-D\-\_\-\-T\-E\-S\-T}!ConwayCell@{Conway\-Cell}}
+\subsubsection[{F\-R\-I\-E\-N\-D\-\_\-\-T\-E\-S\-T}]{\setlength{\rightskip}{0pt plus 5cm}Conway\-Cell\-::\-F\-R\-I\-E\-N\-D\-\_\-\-T\-E\-S\-T (
+\begin{DoxyParamCaption}
+\item[{{\bf Conway\-Cell\-Test}}]{, }
+\item[{Conway\-Cell\-\_\-1}]{}
+\end{DoxyParamCaption}
+)}}\label{classConwayCell_a2067446abf91a0e431cfbfcef78655e9}
+\hypertarget{classConwayCell_aa53ff60436e507934569ad56ef9173e3}{\index{Conway\-Cell@{Conway\-Cell}!F\-R\-I\-E\-N\-D\-\_\-\-T\-E\-S\-T@{F\-R\-I\-E\-N\-D\-\_\-\-T\-E\-S\-T}}
+\index{F\-R\-I\-E\-N\-D\-\_\-\-T\-E\-S\-T@{F\-R\-I\-E\-N\-D\-\_\-\-T\-E\-S\-T}!ConwayCell@{Conway\-Cell}}
+\subsubsection[{F\-R\-I\-E\-N\-D\-\_\-\-T\-E\-S\-T}]{\setlength{\rightskip}{0pt plus 5cm}Conway\-Cell\-::\-F\-R\-I\-E\-N\-D\-\_\-\-T\-E\-S\-T (
+\begin{DoxyParamCaption}
+\item[{{\bf Conway\-Cell\-Test}}]{, }
+\item[{Conway\-Cell\-\_\-2}]{}
+\end{DoxyParamCaption}
+)}}\label{classConwayCell_aa53ff60436e507934569ad56ef9173e3}
+\hypertarget{classConwayCell_ad6c71e5f6e6d522ceac4238841840f19}{\index{Conway\-Cell@{Conway\-Cell}!F\-R\-I\-E\-N\-D\-\_\-\-T\-E\-S\-T@{F\-R\-I\-E\-N\-D\-\_\-\-T\-E\-S\-T}}
+\index{F\-R\-I\-E\-N\-D\-\_\-\-T\-E\-S\-T@{F\-R\-I\-E\-N\-D\-\_\-\-T\-E\-S\-T}!ConwayCell@{Conway\-Cell}}
+\subsubsection[{F\-R\-I\-E\-N\-D\-\_\-\-T\-E\-S\-T}]{\setlength{\rightskip}{0pt plus 5cm}Conway\-Cell\-::\-F\-R\-I\-E\-N\-D\-\_\-\-T\-E\-S\-T (
+\begin{DoxyParamCaption}
+\item[{{\bf Conway\-Cell\-Test}}]{, }
+\item[{Conway\-Cell\-\_\-3}]{}
+\end{DoxyParamCaption}
+)}}\label{classConwayCell_ad6c71e5f6e6d522ceac4238841840f19}
+\hypertarget{classConwayCell_a69db8d9316954fdf1743c6a71bc982c4}{\index{Conway\-Cell@{Conway\-Cell}!F\-R\-I\-E\-N\-D\-\_\-\-T\-E\-S\-T@{F\-R\-I\-E\-N\-D\-\_\-\-T\-E\-S\-T}}
+\index{F\-R\-I\-E\-N\-D\-\_\-\-T\-E\-S\-T@{F\-R\-I\-E\-N\-D\-\_\-\-T\-E\-S\-T}!ConwayCell@{Conway\-Cell}}
+\subsubsection[{F\-R\-I\-E\-N\-D\-\_\-\-T\-E\-S\-T}]{\setlength{\rightskip}{0pt plus 5cm}Conway\-Cell\-::\-F\-R\-I\-E\-N\-D\-\_\-\-T\-E\-S\-T (
+\begin{DoxyParamCaption}
+\item[{{\bf Conway\-Cell\-Test}}]{, }
+\item[{clone\-\_\-1}]{}
+\end{DoxyParamCaption}
+)}}\label{classConwayCell_a69db8d9316954fdf1743c6a71bc982c4}
+\hypertarget{classConwayCell_a3ab2d2c90bb57a8b50442b6100f0308c}{\index{Conway\-Cell@{Conway\-Cell}!F\-R\-I\-E\-N\-D\-\_\-\-T\-E\-S\-T@{F\-R\-I\-E\-N\-D\-\_\-\-T\-E\-S\-T}}
+\index{F\-R\-I\-E\-N\-D\-\_\-\-T\-E\-S\-T@{F\-R\-I\-E\-N\-D\-\_\-\-T\-E\-S\-T}!ConwayCell@{Conway\-Cell}}
+\subsubsection[{F\-R\-I\-E\-N\-D\-\_\-\-T\-E\-S\-T}]{\setlength{\rightskip}{0pt plus 5cm}Conway\-Cell\-::\-F\-R\-I\-E\-N\-D\-\_\-\-T\-E\-S\-T (
+\begin{DoxyParamCaption}
+\item[{{\bf Conway\-Cell\-Test}}]{, }
+\item[{clone\-\_\-2}]{}
+\end{DoxyParamCaption}
+)}}\label{classConwayCell_a3ab2d2c90bb57a8b50442b6100f0308c}
+\hypertarget{classConwayCell_aee7a7ab257ea971be8d495686919e571}{\index{Conway\-Cell@{Conway\-Cell}!F\-R\-I\-E\-N\-D\-\_\-\-T\-E\-S\-T@{F\-R\-I\-E\-N\-D\-\_\-\-T\-E\-S\-T}}
+\index{F\-R\-I\-E\-N\-D\-\_\-\-T\-E\-S\-T@{F\-R\-I\-E\-N\-D\-\_\-\-T\-E\-S\-T}!ConwayCell@{Conway\-Cell}}
+\subsubsection[{F\-R\-I\-E\-N\-D\-\_\-\-T\-E\-S\-T}]{\setlength{\rightskip}{0pt plus 5cm}Conway\-Cell\-::\-F\-R\-I\-E\-N\-D\-\_\-\-T\-E\-S\-T (
+\begin{DoxyParamCaption}
+\item[{{\bf Conway\-Cell\-Test}}]{, }
+\item[{clone\-\_\-3}]{}
+\end{DoxyParamCaption}
+)}}\label{classConwayCell_aee7a7ab257ea971be8d495686919e571}
+\hypertarget{classConwayCell_ab8149e7169ca80bc99322e205fdc32d8}{\index{Conway\-Cell@{Conway\-Cell}!F\-R\-I\-E\-N\-D\-\_\-\-T\-E\-S\-T@{F\-R\-I\-E\-N\-D\-\_\-\-T\-E\-S\-T}}
+\index{F\-R\-I\-E\-N\-D\-\_\-\-T\-E\-S\-T@{F\-R\-I\-E\-N\-D\-\_\-\-T\-E\-S\-T}!ConwayCell@{Conway\-Cell}}
+\subsubsection[{F\-R\-I\-E\-N\-D\-\_\-\-T\-E\-S\-T}]{\setlength{\rightskip}{0pt plus 5cm}Conway\-Cell\-::\-F\-R\-I\-E\-N\-D\-\_\-\-T\-E\-S\-T (
+\begin{DoxyParamCaption}
+\item[{{\bf Conway\-Cell\-Test}}]{, }
+\item[{update\-\_\-state\-\_\-1}]{}
+\end{DoxyParamCaption}
+)}}\label{classConwayCell_ab8149e7169ca80bc99322e205fdc32d8}
+\hypertarget{classConwayCell_a69cf21e56a52a165b356afeaab25ed04}{\index{Conway\-Cell@{Conway\-Cell}!F\-R\-I\-E\-N\-D\-\_\-\-T\-E\-S\-T@{F\-R\-I\-E\-N\-D\-\_\-\-T\-E\-S\-T}}
+\index{F\-R\-I\-E\-N\-D\-\_\-\-T\-E\-S\-T@{F\-R\-I\-E\-N\-D\-\_\-\-T\-E\-S\-T}!ConwayCell@{Conway\-Cell}}
+\subsubsection[{F\-R\-I\-E\-N\-D\-\_\-\-T\-E\-S\-T}]{\setlength{\rightskip}{0pt plus 5cm}Conway\-Cell\-::\-F\-R\-I\-E\-N\-D\-\_\-\-T\-E\-S\-T (
+\begin{DoxyParamCaption}
+\item[{{\bf Conway\-Cell\-Test}}]{, }
+\item[{update\-\_\-state\-\_\-2}]{}
+\end{DoxyParamCaption}
+)}}\label{classConwayCell_a69cf21e56a52a165b356afeaab25ed04}
+\hypertarget{classConwayCell_a99bd220d17a2e3690de9cf5e089f35cc}{\index{Conway\-Cell@{Conway\-Cell}!F\-R\-I\-E\-N\-D\-\_\-\-T\-E\-S\-T@{F\-R\-I\-E\-N\-D\-\_\-\-T\-E\-S\-T}}
+\index{F\-R\-I\-E\-N\-D\-\_\-\-T\-E\-S\-T@{F\-R\-I\-E\-N\-D\-\_\-\-T\-E\-S\-T}!ConwayCell@{Conway\-Cell}}
+\subsubsection[{F\-R\-I\-E\-N\-D\-\_\-\-T\-E\-S\-T}]{\setlength{\rightskip}{0pt plus 5cm}Conway\-Cell\-::\-F\-R\-I\-E\-N\-D\-\_\-\-T\-E\-S\-T (
+\begin{DoxyParamCaption}
+\item[{{\bf Conway\-Cell\-Test}}]{, }
+\item[{update\-\_\-state\-\_\-3}]{}
+\end{DoxyParamCaption}
+)}}\label{classConwayCell_a99bd220d17a2e3690de9cf5e089f35cc}
+\hypertarget{classConwayCell_a0cc28543775075f67a5fde349eccfcbe}{\index{Conway\-Cell@{Conway\-Cell}!F\-R\-I\-E\-N\-D\-\_\-\-T\-E\-S\-T@{F\-R\-I\-E\-N\-D\-\_\-\-T\-E\-S\-T}}
+\index{F\-R\-I\-E\-N\-D\-\_\-\-T\-E\-S\-T@{F\-R\-I\-E\-N\-D\-\_\-\-T\-E\-S\-T}!ConwayCell@{Conway\-Cell}}
+\subsubsection[{F\-R\-I\-E\-N\-D\-\_\-\-T\-E\-S\-T}]{\setlength{\rightskip}{0pt plus 5cm}Conway\-Cell\-::\-F\-R\-I\-E\-N\-D\-\_\-\-T\-E\-S\-T (
+\begin{DoxyParamCaption}
+\item[{{\bf Conway\-Cell\-Test}}]{, }
+\item[{count\-\_\-neighbor\-\_\-1}]{}
+\end{DoxyParamCaption}
+)}}\label{classConwayCell_a0cc28543775075f67a5fde349eccfcbe}
+\hypertarget{classConwayCell_af0c4905fac30c9919443297577ad7596}{\index{Conway\-Cell@{Conway\-Cell}!F\-R\-I\-E\-N\-D\-\_\-\-T\-E\-S\-T@{F\-R\-I\-E\-N\-D\-\_\-\-T\-E\-S\-T}}
+\index{F\-R\-I\-E\-N\-D\-\_\-\-T\-E\-S\-T@{F\-R\-I\-E\-N\-D\-\_\-\-T\-E\-S\-T}!ConwayCell@{Conway\-Cell}}
+\subsubsection[{F\-R\-I\-E\-N\-D\-\_\-\-T\-E\-S\-T}]{\setlength{\rightskip}{0pt plus 5cm}Conway\-Cell\-::\-F\-R\-I\-E\-N\-D\-\_\-\-T\-E\-S\-T (
+\begin{DoxyParamCaption}
+\item[{{\bf Conway\-Cell\-Test}}]{, }
+\item[{count\-\_\-neighbor\-\_\-2}]{}
+\end{DoxyParamCaption}
+)}}\label{classConwayCell_af0c4905fac30c9919443297577ad7596}
+\hypertarget{classConwayCell_a5d773d33e9e45dec53ff3e2695cfa2d1}{\index{Conway\-Cell@{Conway\-Cell}!F\-R\-I\-E\-N\-D\-\_\-\-T\-E\-S\-T@{F\-R\-I\-E\-N\-D\-\_\-\-T\-E\-S\-T}}
+\index{F\-R\-I\-E\-N\-D\-\_\-\-T\-E\-S\-T@{F\-R\-I\-E\-N\-D\-\_\-\-T\-E\-S\-T}!ConwayCell@{Conway\-Cell}}
+\subsubsection[{F\-R\-I\-E\-N\-D\-\_\-\-T\-E\-S\-T}]{\setlength{\rightskip}{0pt plus 5cm}Conway\-Cell\-::\-F\-R\-I\-E\-N\-D\-\_\-\-T\-E\-S\-T (
+\begin{DoxyParamCaption}
+\item[{{\bf Conway\-Cell\-Test}}]{, }
+\item[{count\-\_\-neighbor\-\_\-3}]{}
+\end{DoxyParamCaption}
+)}}\label{classConwayCell_a5d773d33e9e45dec53ff3e2695cfa2d1}
+\hypertarget{classConwayCell_a2bb98a624065715ba41f16d10b6e9940}{\index{Conway\-Cell@{Conway\-Cell}!F\-R\-I\-E\-N\-D\-\_\-\-T\-E\-S\-T@{F\-R\-I\-E\-N\-D\-\_\-\-T\-E\-S\-T}}
+\index{F\-R\-I\-E\-N\-D\-\_\-\-T\-E\-S\-T@{F\-R\-I\-E\-N\-D\-\_\-\-T\-E\-S\-T}!ConwayCell@{Conway\-Cell}}
+\subsubsection[{F\-R\-I\-E\-N\-D\-\_\-\-T\-E\-S\-T}]{\setlength{\rightskip}{0pt plus 5cm}Conway\-Cell\-::\-F\-R\-I\-E\-N\-D\-\_\-\-T\-E\-S\-T (
+\begin{DoxyParamCaption}
+\item[{{\bf Conway\-Cell\-Test}}]{, }
+\item[{print\-\_\-1}]{}
+\end{DoxyParamCaption}
+)}}\label{classConwayCell_a2bb98a624065715ba41f16d10b6e9940}
+\hypertarget{classConwayCell_a7242e24d1d1ef00e33e4c7a1c086402d}{\index{Conway\-Cell@{Conway\-Cell}!F\-R\-I\-E\-N\-D\-\_\-\-T\-E\-S\-T@{F\-R\-I\-E\-N\-D\-\_\-\-T\-E\-S\-T}}
+\index{F\-R\-I\-E\-N\-D\-\_\-\-T\-E\-S\-T@{F\-R\-I\-E\-N\-D\-\_\-\-T\-E\-S\-T}!ConwayCell@{Conway\-Cell}}
+\subsubsection[{F\-R\-I\-E\-N\-D\-\_\-\-T\-E\-S\-T}]{\setlength{\rightskip}{0pt plus 5cm}Conway\-Cell\-::\-F\-R\-I\-E\-N\-D\-\_\-\-T\-E\-S\-T (
+\begin{DoxyParamCaption}
+\item[{{\bf Conway\-Cell\-Test}}]{, }
+\item[{print\-\_\-2}]{}
+\end{DoxyParamCaption}
+)}}\label{classConwayCell_a7242e24d1d1ef00e33e4c7a1c086402d}
+\hypertarget{classConwayCell_aee2276a5977cdc6d699ac17461a3e695}{\index{Conway\-Cell@{Conway\-Cell}!F\-R\-I\-E\-N\-D\-\_\-\-T\-E\-S\-T@{F\-R\-I\-E\-N\-D\-\_\-\-T\-E\-S\-T}}
+\index{F\-R\-I\-E\-N\-D\-\_\-\-T\-E\-S\-T@{F\-R\-I\-E\-N\-D\-\_\-\-T\-E\-S\-T}!ConwayCell@{Conway\-Cell}}
+\subsubsection[{F\-R\-I\-E\-N\-D\-\_\-\-T\-E\-S\-T}]{\setlength{\rightskip}{0pt plus 5cm}Conway\-Cell\-::\-F\-R\-I\-E\-N\-D\-\_\-\-T\-E\-S\-T (
+\begin{DoxyParamCaption}
+\item[{{\bf Conway\-Cell\-Test}}]{, }
+\item[{print\-\_\-3}]{}
+\end{DoxyParamCaption}
+)}}\label{classConwayCell_aee2276a5977cdc6d699ac17461a3e695}
+\hypertarget{classConwayCell_a5ec1d3543e64c91e7f5a4c102de94bd6}{\index{Conway\-Cell@{Conway\-Cell}!F\-R\-I\-E\-N\-D\-\_\-\-T\-E\-S\-T@{F\-R\-I\-E\-N\-D\-\_\-\-T\-E\-S\-T}}
+\index{F\-R\-I\-E\-N\-D\-\_\-\-T\-E\-S\-T@{F\-R\-I\-E\-N\-D\-\_\-\-T\-E\-S\-T}!ConwayCell@{Conway\-Cell}}
+\subsubsection[{F\-R\-I\-E\-N\-D\-\_\-\-T\-E\-S\-T}]{\setlength{\rightskip}{0pt plus 5cm}Conway\-Cell\-::\-F\-R\-I\-E\-N\-D\-\_\-\-T\-E\-S\-T (
+\begin{DoxyParamCaption}
+\item[{{\bf Conway\-Cell\-Test}}]{, }
+\item[{evolve\-\_\-1}]{}
+\end{DoxyParamCaption}
+)}}\label{classConwayCell_a5ec1d3543e64c91e7f5a4c102de94bd6}
+\hypertarget{classConwayCell_a5c8705818153b330a7ec627abe35d1e2}{\index{Conway\-Cell@{Conway\-Cell}!F\-R\-I\-E\-N\-D\-\_\-\-T\-E\-S\-T@{F\-R\-I\-E\-N\-D\-\_\-\-T\-E\-S\-T}}
+\index{F\-R\-I\-E\-N\-D\-\_\-\-T\-E\-S\-T@{F\-R\-I\-E\-N\-D\-\_\-\-T\-E\-S\-T}!ConwayCell@{Conway\-Cell}}
+\subsubsection[{F\-R\-I\-E\-N\-D\-\_\-\-T\-E\-S\-T}]{\setlength{\rightskip}{0pt plus 5cm}Conway\-Cell\-::\-F\-R\-I\-E\-N\-D\-\_\-\-T\-E\-S\-T (
+\begin{DoxyParamCaption}
+\item[{{\bf Conway\-Cell\-Test}}]{, }
+\item[{evolve\-\_\-2}]{}
+\end{DoxyParamCaption}
+)}}\label{classConwayCell_a5c8705818153b330a7ec627abe35d1e2}
+\hypertarget{classConwayCell_afe554afb102b15f42819bc5021d80dae}{\index{Conway\-Cell@{Conway\-Cell}!F\-R\-I\-E\-N\-D\-\_\-\-T\-E\-S\-T@{F\-R\-I\-E\-N\-D\-\_\-\-T\-E\-S\-T}}
+\index{F\-R\-I\-E\-N\-D\-\_\-\-T\-E\-S\-T@{F\-R\-I\-E\-N\-D\-\_\-\-T\-E\-S\-T}!ConwayCell@{Conway\-Cell}}
+\subsubsection[{F\-R\-I\-E\-N\-D\-\_\-\-T\-E\-S\-T}]{\setlength{\rightskip}{0pt plus 5cm}Conway\-Cell\-::\-F\-R\-I\-E\-N\-D\-\_\-\-T\-E\-S\-T (
+\begin{DoxyParamCaption}
+\item[{{\bf Conway\-Cell\-Test}}]{, }
+\item[{evolve\-\_\-3}]{}
+\end{DoxyParamCaption}
+)}}\label{classConwayCell_afe554afb102b15f42819bc5021d80dae}
+\hypertarget{classConwayCell_acff342e1a23dad421d012916272d51f4}{\index{Conway\-Cell@{Conway\-Cell}!F\-R\-I\-E\-N\-D\-\_\-\-T\-E\-S\-T@{F\-R\-I\-E\-N\-D\-\_\-\-T\-E\-S\-T}}
+\index{F\-R\-I\-E\-N\-D\-\_\-\-T\-E\-S\-T@{F\-R\-I\-E\-N\-D\-\_\-\-T\-E\-S\-T}!ConwayCell@{Conway\-Cell}}
+\subsubsection[{F\-R\-I\-E\-N\-D\-\_\-\-T\-E\-S\-T}]{\setlength{\rightskip}{0pt plus 5cm}Conway\-Cell\-::\-F\-R\-I\-E\-N\-D\-\_\-\-T\-E\-S\-T (
+\begin{DoxyParamCaption}
+\item[{{\bf Conway\-Cell\-Test}}]{, }
+\item[{cnt\-\_\-1}]{}
+\end{DoxyParamCaption}
+)}}\label{classConwayCell_acff342e1a23dad421d012916272d51f4}
+\hypertarget{classConwayCell_add103ae6493c6aab58eeb8549c9c6aba}{\index{Conway\-Cell@{Conway\-Cell}!F\-R\-I\-E\-N\-D\-\_\-\-T\-E\-S\-T@{F\-R\-I\-E\-N\-D\-\_\-\-T\-E\-S\-T}}
+\index{F\-R\-I\-E\-N\-D\-\_\-\-T\-E\-S\-T@{F\-R\-I\-E\-N\-D\-\_\-\-T\-E\-S\-T}!ConwayCell@{Conway\-Cell}}
+\subsubsection[{F\-R\-I\-E\-N\-D\-\_\-\-T\-E\-S\-T}]{\setlength{\rightskip}{0pt plus 5cm}Conway\-Cell\-::\-F\-R\-I\-E\-N\-D\-\_\-\-T\-E\-S\-T (
+\begin{DoxyParamCaption}
+\item[{{\bf Conway\-Cell\-Test}}]{, }
+\item[{cnt\-\_\-2}]{}
+\end{DoxyParamCaption}
+)}}\label{classConwayCell_add103ae6493c6aab58eeb8549c9c6aba}
+\hypertarget{classConwayCell_a5cb196006329cfa5bb92b682297bddfa}{\index{Conway\-Cell@{Conway\-Cell}!F\-R\-I\-E\-N\-D\-\_\-\-T\-E\-S\-T@{F\-R\-I\-E\-N\-D\-\_\-\-T\-E\-S\-T}}
+\index{F\-R\-I\-E\-N\-D\-\_\-\-T\-E\-S\-T@{F\-R\-I\-E\-N\-D\-\_\-\-T\-E\-S\-T}!ConwayCell@{Conway\-Cell}}
+\subsubsection[{F\-R\-I\-E\-N\-D\-\_\-\-T\-E\-S\-T}]{\setlength{\rightskip}{0pt plus 5cm}Conway\-Cell\-::\-F\-R\-I\-E\-N\-D\-\_\-\-T\-E\-S\-T (
+\begin{DoxyParamCaption}
+\item[{{\bf Conway\-Cell\-Test}}]{, }
+\item[{cnt\-\_\-3}]{}
+\end{DoxyParamCaption}
+)}}\label{classConwayCell_a5cb196006329cfa5bb92b682297bddfa}
+\hypertarget{classConwayCell_a5bb511ca635edd0de76fc7d7603b9617}{\index{Conway\-Cell@{Conway\-Cell}!F\-R\-I\-E\-N\-D\-\_\-\-T\-E\-S\-T@{F\-R\-I\-E\-N\-D\-\_\-\-T\-E\-S\-T}}
+\index{F\-R\-I\-E\-N\-D\-\_\-\-T\-E\-S\-T@{F\-R\-I\-E\-N\-D\-\_\-\-T\-E\-S\-T}!ConwayCell@{Conway\-Cell}}
+\subsubsection[{F\-R\-I\-E\-N\-D\-\_\-\-T\-E\-S\-T}]{\setlength{\rightskip}{0pt plus 5cm}Conway\-Cell\-::\-F\-R\-I\-E\-N\-D\-\_\-\-T\-E\-S\-T (
+\begin{DoxyParamCaption}
+\item[{{\bf Conway\-Cell\-Test}}]{, }
+\item[{operator\-\_\-equal\-\_\-equal\-\_\-1}]{}
+\end{DoxyParamCaption}
+)}}\label{classConwayCell_a5bb511ca635edd0de76fc7d7603b9617}
+\hypertarget{classConwayCell_abd78212cc3404f77b5a08f0686c190bd}{\index{Conway\-Cell@{Conway\-Cell}!F\-R\-I\-E\-N\-D\-\_\-\-T\-E\-S\-T@{F\-R\-I\-E\-N\-D\-\_\-\-T\-E\-S\-T}}
+\index{F\-R\-I\-E\-N\-D\-\_\-\-T\-E\-S\-T@{F\-R\-I\-E\-N\-D\-\_\-\-T\-E\-S\-T}!ConwayCell@{Conway\-Cell}}
+\subsubsection[{F\-R\-I\-E\-N\-D\-\_\-\-T\-E\-S\-T}]{\setlength{\rightskip}{0pt plus 5cm}Conway\-Cell\-::\-F\-R\-I\-E\-N\-D\-\_\-\-T\-E\-S\-T (
+\begin{DoxyParamCaption}
+\item[{{\bf Conway\-Cell\-Test}}]{, }
+\item[{operator\-\_\-equal\-\_\-equal\-\_\-2}]{}
+\end{DoxyParamCaption}
+)}}\label{classConwayCell_abd78212cc3404f77b5a08f0686c190bd}
+\hypertarget{classConwayCell_a46f5c85b64001dedaaa8d859be53ebcf}{\index{Conway\-Cell@{Conway\-Cell}!F\-R\-I\-E\-N\-D\-\_\-\-T\-E\-S\-T@{F\-R\-I\-E\-N\-D\-\_\-\-T\-E\-S\-T}}
+\index{F\-R\-I\-E\-N\-D\-\_\-\-T\-E\-S\-T@{F\-R\-I\-E\-N\-D\-\_\-\-T\-E\-S\-T}!ConwayCell@{Conway\-Cell}}
+\subsubsection[{F\-R\-I\-E\-N\-D\-\_\-\-T\-E\-S\-T}]{\setlength{\rightskip}{0pt plus 5cm}Conway\-Cell\-::\-F\-R\-I\-E\-N\-D\-\_\-\-T\-E\-S\-T (
+\begin{DoxyParamCaption}
+\item[{{\bf Conway\-Cell\-Test}}]{, }
+\item[{operator\-\_\-equal\-\_\-equal\-\_\-3}]{}
+\end{DoxyParamCaption}
+)}}\label{classConwayCell_a46f5c85b64001dedaaa8d859be53ebcf}
+\hypertarget{classConwayCell_aa83d009212f52ac55e39f42f002970a0}{\index{Conway\-Cell@{Conway\-Cell}!operator=@{operator=}}
+\index{operator=@{operator=}!ConwayCell@{Conway\-Cell}}
+\subsubsection[{operator=}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Conway\-Cell}\& Conway\-Cell\-::operator= (
+\begin{DoxyParamCaption}
+\item[{const {\bf Conway\-Cell} \&}]{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [default]}}}\label{classConwayCell_aa83d009212f52ac55e39f42f002970a0}
+\hypertarget{classConwayCell_a951cc1ac6d81cfea066a2076953fa209}{\index{Conway\-Cell@{Conway\-Cell}!operator=@{operator=}}
+\index{operator=@{operator=}!ConwayCell@{Conway\-Cell}}
+\subsubsection[{operator=}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Conway\-Cell}\& Conway\-Cell\-::operator= (
+\begin{DoxyParamCaption}
+\item[{{\bf Conway\-Cell} \&\&}]{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [default]}}}\label{classConwayCell_a951cc1ac6d81cfea066a2076953fa209}
+\hypertarget{classConwayCell_a5f0061fad24ab7d11c315f3e2dfe45be}{\index{Conway\-Cell@{Conway\-Cell}!operator==@{operator==}}
+\index{operator==@{operator==}!ConwayCell@{Conway\-Cell}}
+\subsubsection[{operator==}]{\setlength{\rightskip}{0pt plus 5cm}bool Conway\-Cell\-::operator== (
+\begin{DoxyParamCaption}
+\item[{const {\bf Conway\-Cell} \&}]{rhs}
+\end{DoxyParamCaption}
+) const}}\label{classConwayCell_a5f0061fad24ab7d11c315f3e2dfe45be}
+
+\begin{DoxyParams}{Parameters}
+{\em other} & \hyperlink{classConwayCell}{Conway\-Cell} \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+true for equal, otherwise false 
+\end{DoxyReturn}
+\hypertarget{classConwayCell_ad8be337992eca64445ebc1259af8d4ca}{\index{Conway\-Cell@{Conway\-Cell}!print@{print}}
+\index{print@{print}!ConwayCell@{Conway\-Cell}}
+\subsubsection[{print}]{\setlength{\rightskip}{0pt plus 5cm}string Conway\-Cell\-::print (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}}\label{classConwayCell_ad8be337992eca64445ebc1259af8d4ca}
+
+\begin{DoxyParams}{Parameters}
+{\em @return} & string character of the cell state \\
+\hline
+\end{DoxyParams}
+
+
+Implements \hyperlink{classAbstractCell_a63e875724c1ee0278449d9489211baa7}{Abstract\-Cell}.
+
+\hypertarget{classConwayCell_a6a0d34c7f90a1b76e144c891ba4541e5}{\index{Conway\-Cell@{Conway\-Cell}!update\-\_\-state@{update\-\_\-state}}
+\index{update\-\_\-state@{update\-\_\-state}!ConwayCell@{Conway\-Cell}}
+\subsubsection[{update\-\_\-state}]{\setlength{\rightskip}{0pt plus 5cm}void Conway\-Cell\-::update\-\_\-state (
+\begin{DoxyParamCaption}
+\item[{string}]{c}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}}\label{classConwayCell_a6a0d34c7f90a1b76e144c891ba4541e5}
+
+\begin{DoxyParams}{Parameters}
+{\em String} & character \\
+\hline
+\end{DoxyParams}
+
+
+Implements \hyperlink{classAbstractCell_a67008aedffea84aac7088ec84e8441cc}{Abstract\-Cell}.
+
+
+
+\subsection{Friends And Related Function Documentation}
+\hypertarget{classConwayCell_aaf9203db9ae10bf69d131c17aa7bf43c}{\index{Conway\-Cell@{Conway\-Cell}!Conway\-Cell\-Test@{Conway\-Cell\-Test}}
+\index{Conway\-Cell\-Test@{Conway\-Cell\-Test}!ConwayCell@{Conway\-Cell}}
+\subsubsection[{Conway\-Cell\-Test}]{\setlength{\rightskip}{0pt plus 5cm}friend class Conway\-Cell\-Test\hspace{0.3cm}{\ttfamily [friend]}}}\label{classConwayCell_aaf9203db9ae10bf69d131c17aa7bf43c}
+
+
+The documentation for this class was generated from the following files\-:\begin{DoxyCompactItemize}
+\item 
+\hyperlink{Life_8h}{Life.\-h}\item 
+\hyperlink{Life_8c_09_09}{Life.\-c++}\end{DoxyCompactItemize}
